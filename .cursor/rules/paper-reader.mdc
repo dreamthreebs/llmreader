@@ -12,27 +12,32 @@ alwaysApply: false
 3. 不要把解释伪装成原文意思。
 4. 不要默认用户已经懂背景物理。
 
-## 双层输出结构
+## 默认输出模式：按 subsection 阅读
 
-每次处理用户给出的一段内容，必须按以下两层顺序输出：
+用户说「读 §X」时，按 subsection 为单位输出（如 §2.1、§2.2）。若 section 无 subsection，按 3–5 段为一个自然单位。每个单位包含：
 
-### 第一层：Faithful Alignment
+1. **Original Text** — 原文的**完整、逐字**英文（verbatim），禁止截断、摘要、用省略号代替、合并段落
+2. **Literal Translation** — 逐句直译
+3. **Faithful Paraphrase** — 通俗重述，标注逻辑角色和限定词
+4. **Physics Meaning** — 物理图景概述
+5. **Equation Notes** — 列出公式，每个给简要符号表和一句话物理含义
+6. **Consistency Check** — 原文直说 / 重述 / 补充 / 模糊
 
-1. **Original Text** — 引用原文
-2. **Literal Translation** — 逐句直译，贴近原句逻辑，不过度润色
-3. **Faithful Paraphrase** — 用更易懂的话重述，不改变原意
-4. **Logical Role** — 标出每句的逻辑角色：definition / assumption / approximation / inference / conclusion / limitation
-5. **Key Qualifiers** — 标出限定词：approximately, in this limit, assume, neglect, leading order, can be written as, suggests 等
+用户说「读 §2」→ 从 §2.1 开始输出，输出完等用户追问或说「下一段」继续 §2.2。
+用户说「读 §2.1」→ 直接输出 §2.1。
+完成后等待用户追问或继续。
 
-### 第二层：Physical Understanding
+## 深入展开模式（用户追问时触发）
 
-6. **Physics Meaning** — 物理图景、物理对象、物理过程、控制参数、在起作用的近似
-7. **Equation / Symbol Notes** — 公式的符号表、逐项解释、数学结构分类、原文说明 vs Agent 解释
-8. **Consistency Check** — 明确区分以下四类：
-   - 原文明确写出 (What the paper explicitly states)
-   - 忠实重述 (Faithful restatement)
-   - 解释性说明 (Interpretive explanation)
-   - 仍然模糊或未充分说明的内容 (Ambiguous / underspecified)
+当用户对某段或某公式追问时，对该片段输出完整 7 栏目：
+
+1. **Original Text**
+2. **Literal Translation**
+3. **Faithful Paraphrase**
+4. **Logical Role** — 每句标注：definition / assumption / approximation / inference / conclusion / limitation
+5. **Physics Meaning** — 物理对象、过程、控制参数、近似
+6. **Equation / Symbol Notes** — 符号表、逐项解释、数学结构、来源标注
+7. **Consistency Check**
 
 ## 公式处理
 
@@ -54,10 +59,26 @@ Agent 的每一句解释必须标明来源层级：
 - **[重述]** — 根据上下文的合理重述
 - **[补充]** — 为帮助理解而补充的背景，不是原文直说
 
+## 口令识别
+
+用户使用以下口令触发对应操作：
+
+| 口令 | 动作 |
+|------|------|
+| `读 §X` | 读取对应 section 的 LaTeX 源码，逐段输出 7 栏目，结果追加到 `readings/<id>.md` |
+| `读公式 (X)` | 定位公式，按公式处理规则输出 7 步 |
+| `鸟瞰 §X` | 快速概览该节结构、假设、结论（不逐句展开） |
+| `串联公式` | 把关键公式串联，梳理推导依赖关系 |
+| `回顾` | 总结最近读过的内容的逻辑推进线 |
+| `批判` | 审视关键假设、近似、跳步 |
+| `下一段` | 继续读当前 section 的下一段 |
+| `检查` / `校验` | 核对笔记：原文引用是否正确、翻译是否忠实、物理内容是否有误 |
+
 ## 目录约定
 
 - 原始文献放 `papers/<id>/`（LaTeX 源码优先，PDF 备选）
-- 阅读笔记写入 `readings/<id>.md`（一篇论文一个文件）
+- 阅读笔记放 `readings/<id>/` 文件夹，**每个 section 一个文件**：`§1.md`、`§2.md`、……
+- **每次读完一个 subsection，必须将内容追加写入对应的 `readings/<id>/§N.md`**
 - 每读完一篇在 `index.md` 追加记录（arXiv ID / 标题 / 主题 / 阅读日期）
 
 ## 行为约束
@@ -66,3 +87,12 @@ Agent 的每一句解释必须标明来源层级：
 - 如果物理解释依赖额外背景知识，单独用「背景补充」块说明
 - 用中文回复，术语首次出现时括号注英文
 - 公式用 LaTeX 格式，行内用 `$...$`，独立公式用 `$$...$$`
+- 笔记中 Original Text 不用 `>` 引用语法，直接写正文
+- Original Text 和 Literal Translation 合并为一个栏目，一段英文紧跟一段中文，标明段落编号如 `**[¶1]**` / `**[¶1 译]**`
+
+## 硬性完整性约束（不可违反）
+
+1. **Original Text 必须完整逐字复制**：从 LaTeX 源码中提取的每个段落必须完整给出英文原文，不得截断、摘要、用 `...` 省略任何句子。引用命令（`\cite` 等）替换为作者名即可，但句子本身不可删减。
+2. **一段一编号**：原文中每个独立段落必须有自己的 `[¶N]`（英文）和 `[¶N 译]`（中文），禁止将多段合并为一条摘要。
+3. **英中成对**：每个 `[¶N]` 后面必须紧跟 `[¶N 译]`，不得只有中文没有英文，也不得只有英文没有中文。
+4. **自检清单**：写入笔记文件前，逐段核对：(a) 英文是否包含该段所有句子？(b) 中文是否覆盖每句英文？(c) 段落编号是否连续无遗漏？不通过则修正后再写入。
