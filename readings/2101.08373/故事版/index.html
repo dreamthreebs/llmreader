@@ -1,0 +1,2830 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI 辅助的科研论文精读笔记">
+      
+      
+      
+      
+        <link rel="prev" href="../%E6%80%BB%E7%BA%B2/">
+      
+      
+        <link rel="next" href="../%E5%9B%BE%E8%A1%A8%E7%89%88/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>故事版 - Paper Reader</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-atacama-cosmology-telescope-probing-the-baryon-content-of-sdss-dr15-galaxies-with-the-thermal-and-kinematic-sunyaev-zeldovich-effects" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Paper Reader" class="md-header__button md-logo" aria-label="Paper Reader" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Paper Reader
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              故事版
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pointsource/llmreader" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../1511.02846/%E6%80%BB%E7%BA%B2/" class="md-tabs__link">
+          
+  
+  
+  论文笔记
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Paper Reader" class="md-nav__button md-logo" aria-label="Paper Reader" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Paper Reader
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pointsource/llmreader" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    论文笔记
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    论文笔记
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1511.02846 — The Kinetic Sunyaev-Zel'dovich Effect from Reionizat...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1511.02846 — The Kinetic Sunyaev-Zel'dovich Effect from Reionizat...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1511.02846/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1511.02846/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1511.02846/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1511.02846/%C2%A71/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    精读 §1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1511.02846/%C2%A72/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    精读 §2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1511.02846/%C2%A73/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    精读 §3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2002.06197 — An Improved Measurement of the Secondary Cosmic Micr...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2002.06197 — An Improved Measurement of the Secondary Cosmic Micr...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2002.06197/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2002.06197/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2002.06197/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2504.09725 — Rapid and Late Cosmic Reionization Driven by Massive...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2504.09725 — Rapid and Late Cosmic Reionization Driven by Massive...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2504.09725/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2504.09725/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2504.09725/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2506.20707 — SPT-3G D1: CMB TT/TE/EE Power Spectra and Cosmology ...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2506.20707 — SPT-3G D1: CMB TT/TE/EE Power Spectra and Cosmology ...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2506.20707/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2506.20707/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2506.20707/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    astro-ph/0501504 — Comparison of Map-Making Algorithms for CMB Experiments
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    astro-ph/0501504 — Comparison of Map-Making Algorithms for CMB Experiments
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../astro-ph.0501504/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../astro-ph.0501504/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../astro-ph.0501504/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1203.4219 — Evidence of Galaxy Cluster Motions with the Kinemati...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1203.4219 — Evidence of Galaxy Cluster Motions with the Kinemati...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1203.4219/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1203.4219/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1203.4219/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1510.06442 — Evidence for the Kinematic Sunyaev-Zel'dovich Effect...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1510.06442 — Evidence for the Kinematic Sunyaev-Zel'dovich Effect...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1510.06442/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1510.06442/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1510.06442/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1603.03904 — Detection of the Kinematic Sunyaev-Zel'dovich Effect...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1603.03904 — Detection of the Kinematic Sunyaev-Zel'dovich Effect...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1603.03904/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1603.03904/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1603.03904/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2101.08373 — The Atacama Cosmology Telescope: Probing the Baryon ...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2101.08373 — The Atacama Cosmology Telescope: Probing the Baryon ...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        宇宙中的重子去哪了？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两种"量体温"的方法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="两种&#34;量体温&#34;的方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sz-tsz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        热 SZ 效应（tSZ）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sz-ksz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运动学 SZ 效应（kSZ）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        数据：地图 + 星系目录
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数据：地图 + 星系目录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cmb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CMB 地图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        星系目录
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        分析：从温度偏移到重子含量
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="分析：从温度偏移到重子含量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tsz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步：叠加提取 tSZ 信号
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：去尘埃
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bary-bartau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：从 \(\bar{y}\) 到 \(\bar{\tau}\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ksz-bartau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第四步：kSZ 的独立 \(\bar{\tau}\) 估计
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第五步：与理论对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结果：两条路径的会合
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="结果：两条路径的会合">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tsz_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tSZ 的高信噪比测量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tsz-vs-ksz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tSZ vs kSZ：两个一致，一个不一致
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        重子含量的全局图景
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        通向未来的一步
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一句话总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2307.11894 — Pairwise kSZ Signal Extraction Efficacy and Optical ...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2307.11894 — Pairwise kSZ Signal Extraction Efficacy and Optical ...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2307.11894/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2307.11894/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2307.11894/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_11" id="__nav_2_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2511.23417 — Detection of the Pairwise Kinematic Sunyaev-Zel'dovi...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2511.23417 — Detection of the Pairwise Kinematic Sunyaev-Zel'dovi...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2511.23417/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2511.23417/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2511.23417/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        宇宙中的重子去哪了？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两种"量体温"的方法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="两种&#34;量体温&#34;的方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sz-tsz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        热 SZ 效应（tSZ）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sz-ksz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运动学 SZ 效应（kSZ）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        数据：地图 + 星系目录
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数据：地图 + 星系目录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cmb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CMB 地图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        星系目录
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        分析：从温度偏移到重子含量
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="分析：从温度偏移到重子含量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tsz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步：叠加提取 tSZ 信号
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：去尘埃
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bary-bartau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：从 \(\bar{y}\) 到 \(\bar{\tau}\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ksz-bartau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第四步：kSZ 的独立 \(\bar{\tau}\) 估计
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第五步：与理论对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结果：两条路径的会合
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="结果：两条路径的会合">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tsz_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tSZ 的高信噪比测量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tsz-vs-ksz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tSZ vs kSZ：两个一致，一个不一致
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        重子含量的全局图景
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        通向未来的一步
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一句话总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="the-atacama-cosmology-telescope-probing-the-baryon-content-of-sdss-dr15-galaxies-with-the-thermal-and-kinematic-sunyaev-zeldovich-effects">The Atacama Cosmology Telescope: Probing the Baryon Content of SDSS DR15 Galaxies with the Thermal and Kinematic Sunyaev-Zel'dovich Effects — 故事版<a class="headerlink" href="#the-atacama-cosmology-telescope-probing-the-baryon-content-of-sdss-dr15-galaxies-with-the-thermal-and-kinematic-sunyaev-zeldovich-effects" title="Permanent link">&para;</a></h1>
+<p><strong>arXiv</strong>: 2101.08373　｜　<strong>作者</strong>: Vavagiakis et al.　｜　<strong>年份</strong>: 2021</p>
+<hr />
+<h2 id="_1">宇宙中的重子去哪了？<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>宇宙大爆炸核合成和宇宙微波背景（CMB）的精密测量告诉我们，宇宙中约 5% 的能量密度是普通物质——重子（baryon）。但当天文学家盘点星系团中的恒星和热气体时，发现它们加起来远不够。大量重子"失踪"了。 [补充]</p>
+<p>这些失踪的重子被认为藏在星系群外围的温热介质中——温度只有几十万到几百万度，密度极低，既不够热到发出 X 射线，也不够密到产生强 tSZ 信号。要找到它们，需要对大量星系群的微弱信号进行统计叠加。 [补充]</p>
+<hr />
+<h2 id="_2">两种"量体温"的方法<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>CMB 光子在穿过星系团的热气体时会发生两种散射效应，各自编码了不同的物理信息：</p>
+<h3 id="sz-tsz">热 SZ 效应（tSZ）<a class="headerlink" href="#sz-tsz" title="Permanent link">&para;</a></h3>
+<p>热气体中的高速电子通过逆康普顿散射（inverse Compton scattering）将 CMB 光子"踢"到更高能量。这在 CMB 频谱上留下了独特的指纹——在低频（如 150 GHz）产生温度下降（decrement），在高频（&gt;217 GHz）产生温度升高。 [补充]</p>
+<p>tSZ 信号的强度正比于 Compton-<span class="arithmatex">\(y\)</span> 参数，它是电子压力沿视线的积分。关键在于：<span class="arithmatex">\(y\)</span> 同时依赖于气体的光学深度 <span class="arithmatex">\(\bar{\tau}\)</span>（取决于重子含量）和电子温度 <span class="arithmatex">\(T_e\)</span>。要从 <span class="arithmatex">\(y\)</span> 中提取重子含量，需要借助流体动力学模拟提供的 <span class="arithmatex">\(\bar{y}\)</span>-<span class="arithmatex">\(\bar{\tau}\)</span> 标度关系。 [重述]</p>
+<h3 id="sz-ksz">运动学 SZ 效应（kSZ）<a class="headerlink" href="#sz-ksz" title="Permanent link">&para;</a></h3>
+<p>当整个星系团相对 CMB 有一个整体运动（特有速度，peculiar velocity）时，CMB 光子被散射后会发生多普勒频移，产生一个与黑体谱形状相同的温度偏移。这个效应比 tSZ 小一个数量级，而且其频谱与原初 CMB 相同，无法通过多频率方法分离——只能通过统计方法（如配对动量估计器，pairwise momentum estimator）提取。 [补充]</p>
+<p>kSZ 的优势在于：其信号正比于 <span class="arithmatex">\(\bar{\tau} \times v_{\rm los}\)</span>，仅依赖于气体总质量和视线速度，<strong>不依赖于气体温度</strong>。如果能独立估计速度（比如通过线性扰动理论的理论预测），就能直接从 kSZ 信号中读出 <span class="arithmatex">\(\bar{\tau}\)</span>。 [重述]</p>
+<p><strong>两种效应合在一起</strong>：tSZ 给出 <span class="arithmatex">\(\bar{y}\)</span>，需要模拟来转换为 <span class="arithmatex">\(\bar{\tau}\)</span>；kSZ 直接拟合出 <span class="arithmatex">\(\bar{\tau}\)</span>。两条独立路径对同一组星系群的 <span class="arithmatex">\(\bar{\tau}\)</span> 估计是否一致？这正是本文要回答的核心问题。 [重述]</p>
+<hr />
+<h2 id="_3">数据：地图 + 星系目录<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="cmb">CMB 地图<a class="headerlink" href="#cmb" title="Permanent link">&para;</a></h3>
+<p>作者使用了三张地图：</p>
+<ol>
+<li><strong>DR5 f150</strong>：ACT 在 150 GHz 与 Planck 联合的共加地图，覆盖约 3700 deg²，角分辨率 1.3′。这是信噪比最高的地图之一。</li>
+<li><strong>DR5 f090</strong>：ACT 在 98 GHz 与 Planck 联合的共加地图，波束更大（FWHM = 2.1′），但 tSZ 信号更强（<span class="arithmatex">\(|f_{\rm SZ}|\)</span> 更大）。</li>
+<li><strong>DR4 ILC</strong>：内部线性组合（Internal Linear Combination）的 Compton-<span class="arithmatex">\(y\)</span> 地图，利用多频率数据直接分离出 tSZ 分量，覆盖约 2089 deg²。</li>
+</ol>
+<p>三张地图独立分析，结果一致则说明测量是稳健的。 [原文]</p>
+<h3 id="_4">星系目录<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>从 SDSS BOSS DR15 目录中选取发光红巨星系（LRG）。经过一系列质量控制——光度下限 <span class="arithmatex">\(L &gt; 4.3 \times 10^{10} L_\odot\)</span>、噪声方差图截断（去掉噪声最高的 27% 区域）、银道面掩模、点源掩模——最终得到 343,647 个源。这比 DB17 的 68,000 个源增加了约 5 倍。 [原文]</p>
+<p>星系按光度分成多个 bin。更高光度的星系追踪更大质量的暗物质晕（通过丰度匹配关系将光度转换为晕质量）。五个累积 bin（L43 到 L116）和四个独立 bin（L43D 到 L98D）使得作者既能获得最高信噪比的测量，也能在独立样本之间做比较。 [原文]</p>
+<hr />
+<h2 id="_5">分析：从温度偏移到重子含量<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="tsz">第一步：叠加提取 tSZ 信号<a class="headerlink" href="#tsz" title="Permanent link">&para;</a></h3>
+<p>对每个星系，从 CMB 地图中切出 18′×18′ 的小子图，用 2.1′ 半径的圆盘平均值减去外围环（2.1′ 到 <span class="arithmatex">\(\sqrt{2} \times 2.1'\)</span>）的平均值——这就是孔径测光（AP）。圆盘内包含暗物质晕的 tSZ 信号，外环提供本地背景估计。</p>
+<p>然后，将同一光度 bin 内所有源的 AP 信号按照逆方差权重叠加。单个星系群的 tSZ 信号太弱无法检测，但叠加数十万个之后，平均信号从噪声中浮现出来——最高信噪比达到 12<span class="arithmatex">\(\sigma\)</span>。 [原文]</p>
+<h3 id="_6">第二步：去尘埃<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>星系自身会发出尘埃辐射——恒星的紫外光被尘埃颗粒吸收后在红外/亚毫米波重新辐射。这在 150 GHz 处表现为一个正信号（亮斑），会部分抵消 tSZ 的负信号。作者利用 Herschel 卫星在 250/350/500 μm 的观测，拟合修正黑体模型（modified blackbody）来估计 150 和 98 GHz 处的尘埃贡献，然后从 tSZ 信号中减去。 [原文]</p>
+<p>从叠加子图的径向轮廓中还能看到一个在波束尺度上的中心亮斑——尤其在 f150 地图中明显——这是 Herschel 校正未能完全去除的额外尘埃污染。作者研究了"去核"AP 方法（excising the beam-scale core），发现对 tSZ 信号的影响一般小于 <span class="arithmatex">\(1\sigma\)</span>，因此未纳入最终分析。 [原文]</p>
+<h3 id="bary-bartau">第三步：从 <span class="arithmatex">\(\bar{y}\)</span> 到 <span class="arithmatex">\(\bar{\tau}\)</span><a class="headerlink" href="#bary-bartau" title="Permanent link">&para;</a></h3>
+<p>tSZ 温度信号通过频率因子 <span class="arithmatex">\(f_{\rm SZ}\)</span> 转换为 Compton-<span class="arithmatex">\(y\)</span>：</p>
+<div class="arithmatex">\[\bar{y} = \frac{\delta T_{\rm tSZ}}{T_{\rm CMB} \cdot f_{\rm SZ}}\]</div>
+<p>然后利用 Battaglia（2017）的流体动力学模拟中的幂律标度关系：</p>
+<div class="arithmatex">\[\ln(\bar{\tau}) = \ln(\tau_0) + m \ln(\bar{y}/10^{-5})\]</div>
+<p>将 <span class="arithmatex">\(\bar{y}\)</span> 转换为 <span class="arithmatex">\(\bar{\tau}\)</span>。这里 <span class="arithmatex">\(\ln(\tau_0) = -6.40\)</span>，<span class="arithmatex">\(m = 0.49\)</span>，来自采用 AGN 反馈的辐射冷却模型的模拟。标度关系的系统不确定性（<span class="arithmatex">\(\ln(\tau_0)\)</span> 的 4% 和 <span class="arithmatex">\(m\)</span> 的 8%）通过蒙特卡罗方法传播到 <span class="arithmatex">\(\bar{\tau}\)</span> 的误差估计中。 [原文]</p>
+<h3 id="ksz-bartau">第四步：kSZ 的独立 <span class="arithmatex">\(\bar{\tau}\)</span> 估计<a class="headerlink" href="#ksz-bartau" title="Permanent link">&para;</a></h3>
+<p>在伴随论文 C21 中，作者对同一组星系测量了 kSZ 的配对动量信号（&gt;5<span class="arithmatex">\(\sigma\)</span> 检测），并通过拟合线性扰动理论的预测来提取 <span class="arithmatex">\(\bar{\tau}\)</span>——这完全独立于 tSZ 的路径。 [原文]</p>
+<h3 id="_7">第五步：与理论对比<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>理论上，假设暗物质晕中的气体遵循 NFW 密度剖面，可以计算在 2.1′ 孔径内预期的 <span class="arithmatex">\(\bar{\tau}_{\rm theory}\)</span>。定义比值 <span class="arithmatex">\(f_c = \bar{\tau}_{\rm obs} / \bar{\tau}_{\rm theory}\)</span>，这个参数表征了观测到的重子占理论预测的比例。 [原文]</p>
+<hr />
+<h2 id="_8">结果：两条路径的会合<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="tsz_1">tSZ 的高信噪比测量<a class="headerlink" href="#tsz_1" title="Permanent link">&para;</a></h3>
+<p>三张地图在所有光度 bin 上的 <span class="arithmatex">\(\bar{y}\)</span> 测量高度一致。最高光度 bin（L116）的 <span class="arithmatex">\(\bar{y}\)</span> 约 <span class="arithmatex">\(3.5 \times 10^{-7}\)</span>，最低光度独立 bin（L43D）的 <span class="arithmatex">\(\bar{y}\)</span> 仅约 <span class="arithmatex">\(10^{-8}\)</span>。信噪比随质量增加而增大——这符合预期：更大质量的暗物质晕包含更多更热的气体，tSZ 信号更强。 [原文]</p>
+<h3 id="tsz-vs-ksz">tSZ vs kSZ：两个一致，一个不一致<a class="headerlink" href="#tsz-vs-ksz" title="Permanent link">&para;</a></h3>
+<p>在三个联合分析的独立光度 bin 中：</p>
+<ul>
+<li><strong>L43D</strong>（最低质量）和 <strong>L61D</strong>（中等质量）：tSZ 和 kSZ 的 <span class="arithmatex">\(\bar{\tau}\)</span> 估计在 <span class="arithmatex">\(1\sigma\)</span> 内一致。<span class="arithmatex">\(f_c\)</span> 值在 0.65–1.19 之间，说明观测到的重子含量与理论预测大致相当。 [原文]</li>
+<li><strong>L79</strong>（最高质量独立 bin）：kSZ 给出的 <span class="arithmatex">\(\bar{\tau}\)</span> 明显低于 tSZ，两者差 2–3<span class="arithmatex">\(\sigma\)</span>。这个差异驱动了累积 bin 中的不一致。 [原文]</li>
+</ul>
+<p>这个不一致可能来自多种原因：kSZ 拟合中固定的宇宙学参数可能不够准确，或者在最高质量 bin 中晕质量的输入需要进一步检验。作者期待未来更高灵敏度的数据能帮助厘清。 [重述]</p>
+<h3 id="_9">重子含量的全局图景<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>跨所有 bin 和地图，<span class="arithmatex">\(f_c\)</span> 的范围是 0.33 到 1.0——观测到的重子占理论预测的 1/3 到全部。这与"失踪重子"图景一致：在较大孔径下可能能看到更多重子，但 2.1′（对应约 0.8 Mpc）的孔径内已经能捕获相当一部分。 [重述]</p>
+<hr />
+<h2 id="_10">通向未来的一步<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<p>这篇文章最重要的贡献不仅仅是更高信噪比的 SZ 测量，而是建立了一个框架——<strong>从两种独立的 SZ 效应分别估计同一组暗物质晕的光学深度，然后交叉验证</strong>。这个框架指向了一个更宏大的目标：建立从观测直接导出的经验 <span class="arithmatex">\(\bar{y}\)</span>-<span class="arithmatex">\(\bar{\tau}\)</span> 关系，摆脱对模拟标度关系的依赖。 [重述]</p>
+<p>一旦 <span class="arithmatex">\(\bar{\tau}\)</span> 被独立确定，kSZ 的配对动量就能转化为配对速度，后者对宇宙学参数（包括中微子质量之和 <span class="arithmatex">\(\sum m_\nu\)</span>）极为敏感。本文的数据已经展示了这条路线的可行性。随着 ACT 完整数据集、Simons Observatory、CCAT-prime、CMB-S4 等下一代实验的到来，SZ 效应将成为探测宇宙重子分布和约束宇宙学的强大工具。 [重述]</p>
+<hr />
+<h2 id="_11">一句话总结<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>通过将 ACT+Planck 的 tSZ 信号和 kSZ 配对动量信号在相同的孔径测光框架下联合分析 34 万个 SDSS DR15 星系，本文发现暗物质晕中观测到的重子含量占 NFW 理论预测的 1/3 到全部，迈出了建立经验性 <span class="arithmatex">\(\bar{y}\)</span>-<span class="arithmatex">\(\bar{\tau}\)</span> 关系的第一步。</strong></p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+    
+  </body>
+</html>

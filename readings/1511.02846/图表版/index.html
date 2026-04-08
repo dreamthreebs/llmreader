@@ -1,0 +1,4623 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI 辅助的科研论文精读笔记">
+      
+      
+      
+      
+        <link rel="prev" href="../%E6%95%85%E4%BA%8B%E7%89%88/">
+      
+      
+        <link rel="next" href="../%C2%A71/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>图表版 - Paper Reader</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#151102846" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Paper Reader" class="md-header__button md-logo" aria-label="Paper Reader" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Paper Reader
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              图表版
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pointsource/llmreader" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../%E6%80%BB%E7%BA%B2/" class="md-tabs__link">
+          
+  
+  
+  论文笔记
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Paper Reader" class="md-nav__button md-logo" aria-label="Paper Reader" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Paper Reader
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pointsource/llmreader" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    论文笔记
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    论文笔记
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1511.02846 — The Kinetic Sunyaev-Zel'dovich Effect from Reionizat...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1511.02846 — The Kinetic Sunyaev-Zel'dovich Effect from Reionizat...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        论文全局地图
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-1-doppler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 1 — Doppler 功率谱的红移微分贡献
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 1 — Doppler 功率谱的红移微分贡献">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-2-doppler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 2 — 再电离如何翻转密度-Doppler 相关的符号
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 2 — 再电离如何翻转密度-Doppler 相关的符号">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-3-doppler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 3 — 瞬时再电离的 Doppler 功率谱分解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 3 — 瞬时再电离的 Doppler 功率谱分解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-4-doppler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 4 — 不同再电离持续时间的 Doppler 功率谱
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 4 — 不同再电离持续时间的 Doppler 功率谱">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-5-doppler-vs-tau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 5 — Doppler 峰值振幅 vs. \(\tau\)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 5 — Doppler 峰值振幅 vs. \(\tau\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-6-ksz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 6 — 全天 kSZ 温度地图
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 6 — 全天 kSZ 温度地图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-7-32-times-32-ksz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 7 — \(32° \times 32°\) 区域的 kSZ 四分量分离
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 7 — \(32° \times 32°\) 区域的 kSZ 四分量分离">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-8-vs-patchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 8 — 模拟 vs. 解析功率谱：大尺度解析完胜，小尺度 patchy 接管
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 8 — 模拟 vs. 解析功率谱：大尺度解析完胜，小尺度 patchy 接管">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-9-patchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 9 — Patchy 功率谱的十项解剖
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 9 — Patchy 功率谱的十项解剖">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看——关键特征详解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-10-ksz21cm-ell-sim-100-510" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 10 — kSZ–21cm 交叉相关：正相关、\(\ell \sim 100\) 峰、5–10σ 可探测
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 10 — kSZ–21cm 交叉相关：正相关、\(\ell \sim 100\) 峰、5–10σ 可探测">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-11-ksz21cm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 11 — kSZ–21cm 交叉相关的红移切片：追踪再电离历史
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 11 — kSZ–21cm 交叉相关的红移切片：追踪再电离历史">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_56" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_57" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 12 — （论文正文未引用）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        宇宙学参数（论文脚注 1）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_58" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        全文结论一览
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%C2%A71/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    精读 §1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%C2%A72/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    精读 §2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%C2%A73/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    精读 §3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2002.06197 — An Improved Measurement of the Secondary Cosmic Micr...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2002.06197 — An Improved Measurement of the Secondary Cosmic Micr...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2002.06197/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2002.06197/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2002.06197/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2504.09725 — Rapid and Late Cosmic Reionization Driven by Massive...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2504.09725 — Rapid and Late Cosmic Reionization Driven by Massive...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2504.09725/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2504.09725/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2504.09725/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2506.20707 — SPT-3G D1: CMB TT/TE/EE Power Spectra and Cosmology ...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2506.20707 — SPT-3G D1: CMB TT/TE/EE Power Spectra and Cosmology ...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2506.20707/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2506.20707/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2506.20707/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    astro-ph/0501504 — Comparison of Map-Making Algorithms for CMB Experiments
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    astro-ph/0501504 — Comparison of Map-Making Algorithms for CMB Experiments
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../astro-ph.0501504/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../astro-ph.0501504/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../astro-ph.0501504/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1203.4219 — Evidence of Galaxy Cluster Motions with the Kinemati...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1203.4219 — Evidence of Galaxy Cluster Motions with the Kinemati...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1203.4219/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1203.4219/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1203.4219/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1510.06442 — Evidence for the Kinematic Sunyaev-Zel'dovich Effect...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1510.06442 — Evidence for the Kinematic Sunyaev-Zel'dovich Effect...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1510.06442/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1510.06442/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1510.06442/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1603.03904 — Detection of the Kinematic Sunyaev-Zel'dovich Effect...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1603.03904 — Detection of the Kinematic Sunyaev-Zel'dovich Effect...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1603.03904/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1603.03904/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1603.03904/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2101.08373 — The Atacama Cosmology Telescope: Probing the Baryon ...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2101.08373 — The Atacama Cosmology Telescope: Probing the Baryon ...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2101.08373/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2101.08373/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2101.08373/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2307.11894 — Pairwise kSZ Signal Extraction Efficacy and Optical ...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2307.11894 — Pairwise kSZ Signal Extraction Efficacy and Optical ...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2307.11894/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2307.11894/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2307.11894/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_11" id="__nav_2_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2511.23417 — Detection of the Pairwise Kinematic Sunyaev-Zel'dovi...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2511.23417 — Detection of the Pairwise Kinematic Sunyaev-Zel'dovi...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2511.23417/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2511.23417/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2511.23417/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        论文全局地图
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-1-doppler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 1 — Doppler 功率谱的红移微分贡献
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 1 — Doppler 功率谱的红移微分贡献">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-2-doppler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 2 — 再电离如何翻转密度-Doppler 相关的符号
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 2 — 再电离如何翻转密度-Doppler 相关的符号">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-3-doppler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 3 — 瞬时再电离的 Doppler 功率谱分解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 3 — 瞬时再电离的 Doppler 功率谱分解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-4-doppler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 4 — 不同再电离持续时间的 Doppler 功率谱
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 4 — 不同再电离持续时间的 Doppler 功率谱">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-5-doppler-vs-tau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 5 — Doppler 峰值振幅 vs. \(\tau\)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 5 — Doppler 峰值振幅 vs. \(\tau\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-6-ksz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 6 — 全天 kSZ 温度地图
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 6 — 全天 kSZ 温度地图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-7-32-times-32-ksz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 7 — \(32° \times 32°\) 区域的 kSZ 四分量分离
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 7 — \(32° \times 32°\) 区域的 kSZ 四分量分离">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-8-vs-patchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 8 — 模拟 vs. 解析功率谱：大尺度解析完胜，小尺度 patchy 接管
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 8 — 模拟 vs. 解析功率谱：大尺度解析完胜，小尺度 patchy 接管">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-9-patchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 9 — Patchy 功率谱的十项解剖
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 9 — Patchy 功率谱的十项解剖">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看——关键特征详解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-10-ksz21cm-ell-sim-100-510" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 10 — kSZ–21cm 交叉相关：正相关、\(\ell \sim 100\) 峰、5–10σ 可探测
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 10 — kSZ–21cm 交叉相关：正相关、\(\ell \sim 100\) 峰、5–10σ 可探测">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-11-ksz21cm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 11 — kSZ–21cm 交叉相关的红移切片：追踪再电离历史
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Figure 11 — kSZ–21cm 交叉相关的红移切片：追踪再电离历史">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因：为什么要画这张图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_56" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_57" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figure-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Figure 12 — （论文正文未引用）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        宇宙学参数（论文脚注 1）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_58" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        全文结论一览
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="151102846">1511.02846 — 图表完整导读<a class="headerlink" href="#151102846" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>目标</strong>：只看这份文件，就能理解整篇论文在讲什么。每张图都配有：前因（为什么要画这张图）、图本身（怎么看）、后果（这张图推动了什么结论）。</p>
+<p>标注规则：<strong>[原文]</strong> = 论文正文/caption 直接说明；<strong>[补充]</strong> = Agent 的解释。</p>
+</blockquote>
+<hr />
+<h2 id="_1">论文全局地图<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><strong>论文标题</strong>：Large-scale kinetic Sunyaev-Zel'dovich effect from reionization（再电离的大尺度运动学 SZ 效应）</p>
+<p><strong>一句话摘要</strong>：CMB 光子穿过再电离时代的自由电子时被 Doppler 频移（kSZ 效应），本文用解析理论 + 数值模拟计算了这个效应在<strong>所有角度尺度</strong>（<span class="arithmatex">\(\ell \sim 3\)</span>–<span class="arithmatex">\(3000\)</span>）的功率谱，并预测了 kSZ 与 21 cm 的交叉相关。</p>
+<p><strong>论文的逻辑链</strong>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>§1 Introduction — kSZ 是什么，为什么重要
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>     ↓
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>§2 解析理论 — 推导 kSZ 功率谱的公式
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>   §2.1 基本表达式：温度涨落 = 视线积分(散射概率 × 电子动量)
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>   §2.2 Doppler 功率谱：大尺度 ℓ~20-30 的峰来自&quot;再散射面&quot;
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>   §2.3 Doppler-LSS 交叉相关：密度峰是热点还是冷点？
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>   §2.4 单个 HII 区的冷点估计
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>     ↓
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>§3 数值模拟 — 验证解析理论 + 处理解析理论无法处理的非线性效应
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>   §3.1 Patchy 再电离模拟（excursion set 算法）
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>   §3.2 光锥投影（模拟盒子 → 全天地图）
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>   §3.3 kSZ 地图的四分量分离
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>   §3.4 功率谱的十项解剖 → patchy 主导小尺度
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>     ↓
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>§4 kSZ–21cm 交叉相关 — 唯一能分辨红移信息的手段
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>   §4.1 交叉功率谱和信噪比
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>   §4.2 频率（红移）依赖 → 追踪再电离历史
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>     ↓
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>§5 Summary — 两个主要特征：ℓ~20-30 Doppler 峰 + ℓ≳300 patchy 平台
+</code></pre></div>
+<p><strong>关键物理量速查</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+<th>直觉</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(g(z)\)</span></td>
+<td>可见度函数</td>
+<td>"此处电子散射 CMB 光子的概率密度"</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\mathbf{q} = (1+\delta)(1+\delta_x)\mathbf{v}\)</span></td>
+<td>比动量</td>
+<td>密度 × 电离 × 速度 三者的耦合</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(u(z) = g(z)\dot{D}/D/(1+z)\)</span></td>
+<td>速度-可见度耦合函数</td>
+<td>"此红移处速度场产生 kSZ 信号的效率"</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\delta\)</span></td>
+<td>物质密度对比度</td>
+<td>某处比平均密多/少多少</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\delta_x\)</span></td>
+<td>电离对比度</td>
+<td>某处比平均电离多/少多少（HII 区内 ~<span class="arithmatex">\(1/\bar{x}-1\)</span>，中性区 <span class="arithmatex">\(= -1\)</span>）</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\tau\)</span></td>
+<td>Thomson 光学深度</td>
+<td>"总共有多少电子参与了散射"</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(C_\ell\)</span></td>
+<td>角功率谱</td>
+<td>"在角尺度 <span class="arithmatex">\(\theta \sim 180°/\ell\)</span> 上温度涨落的统计强度"</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="figure-1-doppler">Figure 1 — Doppler 功率谱的红移微分贡献<a class="headerlink" href="#figure-1-doppler" title="Permanent link">&para;</a></h2>
+<p><img alt="Figure 1" src="../../papers/1511.02846/figures/fig1.png" /></p>
+<p><strong>对应章节</strong>：§2.2　｜　<strong>关键公式</strong>：Eq.4–7</p>
+<h3 id="_2">前因：为什么要画这张图<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>kSZ 温度涨落（Eq.3）是沿视线方向的积分——不同红移 <span class="arithmatex">\(z\)</span> 处的电子运动都有贡献。那么问题来了：<strong>贡献集中在哪些红移？</strong> 如果所有红移都均匀贡献，信号会因为远近端电子运动方向相反而互相抵消（"视线消去"，line-of-sight cancellation）。只有当贡献<strong>集中在某个窄红移范围</strong>时，消去才不完全，才有可测的信号。</p>
+<h3 id="_3">图说什么<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>四个面板（不同 <span class="arithmatex">\(\ell\)</span> 值）展示功率谱的<strong>红移微分贡献</strong> <span class="arithmatex">\(dC_\ell / dz\,dz'\)</span>。每个面板分两半：</p>
+<ul>
+<li><strong>左上三角</strong>：假设宇宙一直完全电离（<span class="arithmatex">\(x = 1\)</span>，无再电离）</li>
+<li><strong>右下三角</strong>：有再电离（tanh 模型，<span class="arithmatex">\(z_r = 10\)</span>，<span class="arithmatex">\(\Delta z = 0.5\)</span>）</li>
+</ul>
+<h3 id="_4">怎么看<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>颜色深</strong> = 该 <span class="arithmatex">\((z, z')\)</span> 红移组合对 <span class="arithmatex">\(C_\ell\)</span> 贡献大</li>
+<li><strong>左上三角</strong>（无再电离）：贡献沿对角线分散，到处都有一点但哪儿都不集中——视线消去使得总信号很弱。<strong>[原文]</strong></li>
+<li><strong>右下三角</strong>（有再电离）：贡献<strong>集中在 <span class="arithmatex">\(z \approx 10\)</span> 的十字线上</strong>！十字的横竖分别对应 <span class="arithmatex">\(z = z_r\)</span> 和 <span class="arithmatex">\(z' = z_r\)</span>。<strong>[原文]</strong></li>
+<li>十字线交叉处 (<span class="arithmatex">\(z = z' = z_r\)</span>)：这是"再散射面"的自相关 → 对应 Figure 3 中的 <span class="arithmatex">\(C_\ell^{\rm R}\)</span> 项。<strong>[补充]</strong></li>
+<li>对比四个面板：<span class="arithmatex">\(\ell\)</span> 越大（越小的角尺度），十字线越集中 → 小尺度 kSZ 几乎全部来自 <span class="arithmatex">\(z_r\)</span> 附近。<strong>[补充]</strong></li>
+</ol>
+<h3 id="_5">需要理解的物理<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p><strong>视线消去的数学根源</strong>：纵向功率谱 <span class="arithmatex">\(C_\ell^\parallel\)</span> 正比于 <span class="arithmatex">\((\partial u / \partial \chi)^2\)</span>（Eq.6）。<span class="arithmatex">\(u(z) = g(z)\dot{D}/D/(1+z)\)</span> 在 <span class="arithmatex">\(x = 1\)</span> 时光滑变化 → 导数小 → 信号弱。但再电离时 <span class="arithmatex">\(g(z)\)</span> 在 <span class="arithmatex">\(z_r\)</span> 处从零陡然升起 → <span class="arithmatex">\(\partial u / \partial \chi\)</span> 出现尖峰 → 打破视线消去 → 信号集中在 <span class="arithmatex">\(z_r\)</span>。<strong>[原文]</strong></p>
+<p><strong>核心结论</strong>：再电离为大尺度 kSZ 提供了一个"再散射面"，类似于原初 CMB 的"最后散射面"，只不过不是发生在 <span class="arithmatex">\(z \sim 1100\)</span> 而是 <span class="arithmatex">\(z \sim 10\)</span>。</p>
+<h3 id="_6">后果<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>这张图建立了核心直觉——再电离的存在打破视线消去，从而产生可测信号。接下来 Figure 3 将把这个信号分解为三项。</p>
+<hr />
+<h2 id="figure-2-doppler">Figure 2 — 再电离如何翻转密度-Doppler 相关的符号<a class="headerlink" href="#figure-2-doppler" title="Permanent link">&para;</a></h2>
+<p><img alt="Figure 2" src="../../papers/1511.02846/figures/fig2.png" /></p>
+<p><strong>对应章节</strong>：§2.3　｜　<strong>关键公式</strong>：<span class="arithmatex">\(\partial u / \partial z = \bar{x}(\partial u_0 / \partial z) + u_0(\partial \bar{x} / \partial z)\)</span></p>
+<h3 id="_7">前因：为什么要画这张图<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>知道了 kSZ 功率谱的形状（Figure 1），下一个问题是：<strong>kSZ 信号和大尺度结构（密度场）是怎么相关的？</strong> 如果高密度区对应 CMB 热点，那交叉相关为正；如果对应冷点，则为负。这对探测策略至关重要——特别是计划用 21 cm 做交叉相关时，需要知道符号。</p>
+<h3 id="_8">图说什么<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>上面板</strong>：再电离历史 <span class="arithmatex">\(x(z)\)</span>（tanh 模型，<span class="arithmatex">\(z_r = 10\)</span>）</li>
+<li><strong>下面板</strong>：关键量 <span class="arithmatex">\(\partial u / \partial z\)</span> 随红移的变化。它的<strong>符号直接决定了密度峰是热点还是冷点</strong>。</li>
+</ul>
+<h3 id="_9">怎么看<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>竖虚线</strong>标出符号翻转的红移（约 <span class="arithmatex">\(z \sim 9\)</span>）</li>
+<li>虚线<strong>左侧</strong>（低 <span class="arithmatex">\(z\)</span>，再电离完成后）：<span class="arithmatex">\(\partial u / \partial z &gt; 0\)</span> → 高密度区 = <strong>热点</strong> <strong>[原文]</strong></li>
+<li>虚线<strong>右侧</strong>（高 <span class="arithmatex">\(z\)</span>，再电离进行中）：<span class="arithmatex">\(\partial u / \partial z &lt; 0\)</span> → 高密度区 = <strong>冷点</strong> <strong>[原文]</strong></li>
+<li><strong>虚线</strong> = 恒定电离（<span class="arithmatex">\(x = 1\)</span>）时的 <span class="arithmatex">\(\partial u / \partial z\)</span>，始终为正 → 说明<strong>符号翻转完全是再电离造成的</strong> <strong>[原文]</strong></li>
+</ol>
+<h3 id="_10">需要理解的物理<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(u = u_0 \cdot x\)</span>，其中 <span class="arithmatex">\(u_0\)</span> 编码速度增长，<span class="arithmatex">\(x\)</span> 编码电离分数。对 <span class="arithmatex">\(z\)</span> 求导：</p>
+<div class="arithmatex">\[\frac{\partial u}{\partial z} = \bar{x}\frac{\partial u_0}{\partial z} + u_0\frac{\partial \bar{x}}{\partial z}\]</div>
+<ul>
+<li><strong>第一项</strong>（速度增长）始终为正</li>
+<li><strong>第二项</strong>（电离演化）：再电离期间 <span class="arithmatex">\(z\)</span> 减小时 <span class="arithmatex">\(x\)</span> 增大 → <span class="arithmatex">\(\partial \bar{x} / \partial z &lt; 0\)</span> → 负贡献</li>
+</ul>
+<p>两项竞争。当第二项的负贡献压过第一项时，<span class="arithmatex">\(\partial u / \partial z &lt; 0\)</span> → <strong>密度峰变成冷点</strong>。<strong>[原文]</strong></p>
+<p><strong>冷点的物理直觉</strong>：想象一个高密度区正在坍缩——近端电子远离你（红移），远端电子朝向你（蓝移）。如果整个区域均匀电离，远近两端部分抵消。但在再电离期间，<strong>近端比远端"更早"被电离</strong>（近端对应更低红移 → 更高电离分数）。所以光子在近端被更多地散射 → 净效应是红移 → 冷点。<strong>[补充]</strong></p>
+<h3 id="_11">后果<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>这个符号翻转直接预测了 §2.4 中孤立 HII 区的冷点，以及 §4 中 kSZ–21cm 交叉相关的<strong>正号</strong>（经过 21 cm 端再翻转一次后）。</p>
+<hr />
+<h2 id="figure-3-doppler">Figure 3 — 瞬时再电离的 Doppler 功率谱分解<a class="headerlink" href="#figure-3-doppler" title="Permanent link">&para;</a></h2>
+<p><img alt="Figure 3" src="../../papers/1511.02846/figures/fig3.png" /></p>
+<p><strong>对应章节</strong>：§2.2　｜　<strong>关键公式</strong>：Eq.8（<span class="arithmatex">\(C_\ell = C_\ell^{\rm D} + C_\ell^{\rm R} - 2C_\ell^{\rm RD}\)</span>）</p>
+<h3 id="_12">前因：为什么要画这张图<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>Figure 1 告诉我们信号集中在 <span class="arithmatex">\(z_r\)</span> 附近，但具体由几个物理过程贡献？瞬时再电离（<span class="arithmatex">\(\Delta z \to 0\)</span>）是一个理想化的极限，在这个极限下 <span class="arithmatex">\(x(z)\)</span> 从 0 跳到 1 → <span class="arithmatex">\(\partial u / \partial z\)</span> 的导数含一个 <span class="arithmatex">\(\delta\)</span> 函数 → 功率谱可以<strong>精确分解为三项</strong>，每项有清晰的物理含义。</p>
+<h3 id="_13">图说什么<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>三条曲线代表 Doppler 功率谱的三项分解（<span class="arithmatex">\(z_r = 10\)</span>）：</p>
+<table>
+<thead>
+<tr>
+<th>曲线</th>
+<th>对应项</th>
+<th>物理含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>虚线 <span class="arithmatex">\(C_\ell^{\rm R}\)</span></td>
+<td>再散射面</td>
+<td><span class="arithmatex">\(z = z_r\)</span> 那个壳层上速度场的一次性投影</td>
+</tr>
+<tr>
+<td>虚线 <span class="arithmatex">\(C_\ell^{\rm D}\)</span></td>
+<td>Doppler</td>
+<td>再电离<strong>之后</strong>，速度场持续增长的贡献（视线积分）</td>
+</tr>
+<tr>
+<td>虚线 <span class="arithmatex">\(2C_\ell^{\rm RD}\)</span></td>
+<td>交叉抵消</td>
+<td><span class="arithmatex">\(C^{\rm R}\)</span> 和 <span class="arithmatex">\(C^{\rm D}\)</span> 的干涉（总是负号 = 部分抵消）</td>
+</tr>
+<tr>
+<td>实线</td>
+<td>总功率谱</td>
+<td><span class="arithmatex">\(C^{\rm D} + C^{\rm R} - 2C^{\rm RD}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_14">怎么看<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong><span class="arithmatex">\(C_\ell^{\rm R}\)</span> 主导</strong>：在 <span class="arithmatex">\(\ell \gtrsim 10\)</span>，<span class="arithmatex">\(C^{\rm R}\)</span> 远大于 <span class="arithmatex">\(C^{\rm D}\)</span> → 信号主要来自再散射面的一次性投影。<strong>[原文]</strong></li>
+<li><strong>峰在 <span class="arithmatex">\(\ell \sim 20\)</span>–<span class="arithmatex">\(30\)</span></strong>：对应再散射面处的速度相关长度投影到天球上的角度 → <span class="arithmatex">\(\theta \sim 5°\)</span>–<span class="arithmatex">\(10°\)</span>。<strong>[补充]</strong></li>
+<li><strong><span class="arithmatex">\(C^{\rm D}\)</span> 较小且峰在更大尺度</strong>：因为它是视线积分，受视线消去压制。<strong>[原文]</strong></li>
+<li><strong><span class="arithmatex">\(2C^{\rm RD}\)</span> 为负</strong>：近端速度（<span class="arithmatex">\(z &lt; z_r\)</span>）与再散射面速度反相关 → 部分冲销再散射面信号。<strong>[补充]</strong></li>
+<li><strong>总功率谱的峰</strong>：<span class="arithmatex">\(\ell^2 C_\ell / (2\pi) \sim 30\ \mu\text{K}^2\)</span> → 这是大尺度 kSZ Doppler 峰的典型振幅。<strong>[原文]</strong></li>
+</ol>
+<h3 id="_15">需要理解的物理<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p><strong>为什么 <span class="arithmatex">\(C^{\rm R}\)</span> 主导？</strong> 再散射面上，速度场在 <span class="arithmatex">\(z_r\)</span> 的一个时刻"冻结"在天球上，没有时间让远近两端的速度抵消。这就像拍了一张快照——不受视线消去影响。相比之下，<span class="arithmatex">\(C^{\rm D}\)</span> 是一个积分，前后的速度指向不同方向，积分后大部分抵消了。<strong>[补充]</strong></p>
+<p><strong>为什么峰在 <span class="arithmatex">\(\ell \sim 20\)</span>–<span class="arithmatex">\(30\)</span> 而不是更大/更小？</strong> 这由 <span class="arithmatex">\(z_r \sim 10\)</span> 处的速度相关长度决定。线性理论下 <span class="arithmatex">\(v(k) \propto \delta(k)/k\)</span>，速度功率谱在 <span class="arithmatex">\(k \sim 0.01\ \text{Mpc}^{-1}\)</span> 附近最大 → 投影到 <span class="arithmatex">\(\chi(z_r) \sim 10\)</span> Gpc 的角距离，得到 <span class="arithmatex">\(\ell \sim k\chi \sim 100\)</span>——但因为是纵向分量，视线消去再压低一些，最终峰移到 <span class="arithmatex">\(\ell \sim 20\)</span>–<span class="arithmatex">\(30\)</span>。<strong>[补充]</strong></p>
+<h3 id="_16">后果<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<p>建立了 Doppler 峰的解析理解。Figure 4 接下来探索：如果再电离不是瞬时的（<span class="arithmatex">\(\Delta z &gt; 0\)</span>），峰会怎么变？</p>
+<hr />
+<h2 id="figure-4-doppler">Figure 4 — 不同再电离持续时间的 Doppler 功率谱<a class="headerlink" href="#figure-4-doppler" title="Permanent link">&para;</a></h2>
+<p><img alt="Figure 4" src="../../papers/1511.02846/figures/fig4.png" /></p>
+<p><strong>对应章节</strong>：§2.2　｜　<strong>关键公式</strong>：Eq.7，tanh 参数化</p>
+<h3 id="_17">前因：为什么要画这张图<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p>Figure 3 用了理想化的<strong>瞬时</strong>再电离。真实的再电离不会瞬间完成——它可能持续几亿年。持续时间 <span class="arithmatex">\(\Delta z\)</span> 是再电离最重要的参数之一。这张图回答：<strong><span class="arithmatex">\(\Delta z\)</span> 怎么影响 Doppler 峰？</strong></p>
+<h3 id="_18">图说什么<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p>固定 <span class="arithmatex">\(z_r = 10\)</span>，画三条曲线对应 <span class="arithmatex">\(\Delta z_{\rm reion} = 0.1\)</span>（近乎瞬时）、<span class="arithmatex">\(1\)</span>（中等）、<span class="arithmatex">\(2\)</span>（缓慢）。插图是对应的 <span class="arithmatex">\(x(z)\)</span> 曲线。</p>
+<h3 id="_19">怎么看<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>再电离越短 → 峰越高</strong>：<span class="arithmatex">\(\Delta z = 0.1\)</span> 的振幅 ~<span class="arithmatex">\(30\ \mu\text{K}^2\)</span>；<span class="arithmatex">\(\Delta z = 2\)</span> 只有 ~<span class="arithmatex">\(5\ \mu\text{K}^2\)</span>。<strong>[原文]</strong></li>
+<li><strong>峰的位置几乎不变</strong>（<span class="arithmatex">\(\ell \sim 20\)</span>–<span class="arithmatex">\(30\)</span>）：因为位置由 <span class="arithmatex">\(z_r\)</span> 处的速度相关长度决定，与 <span class="arithmatex">\(\Delta z\)</span> 无关。<strong>[补充]</strong></li>
+<li><strong>大尺度（<span class="arithmatex">\(\ell &lt; 10\)</span>）差异小</strong>：因为这些尺度上速度相关本来就很长程，不太受消去影响。<strong>[补充]</strong></li>
+</ol>
+<h3 id="_20">需要理解的物理<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<p><strong>为什么短的再电离 → 大的信号？</strong></p>
+<p><span class="arithmatex">\(\Delta z\)</span> 小 → <span class="arithmatex">\(x(z)\)</span> 跳变更陡 → <span class="arithmatex">\(\partial u / \partial z\)</span> 的尖峰更窄更高 → 功率谱 <span class="arithmatex">\(\propto (\partial u / \partial \chi)^2\)</span> 更大。物理上说：再电离越快，"再散射面"越薄、越锋利 → 信号在一个窄壳层上集中 → 远近两端没有足够的距离来做消去。<strong>[原文 + 补充]</strong></p>
+<p>反过来说，如果再电离缓慢（<span class="arithmatex">\(\Delta z = 2\)</span>），<span class="arithmatex">\(x(z)\)</span> 缓变 → <span class="arithmatex">\(u(z)\)</span> 也缓变 → 视线消去更有效 → 信号被压低。<strong>[补充]</strong></p>
+<p><strong>观测意义</strong>：如果未来能测到 Doppler 峰的振幅，就能<strong>约束再电离的持续时间</strong>。但注意——这与小尺度 patchy 信号的趋势<strong>相反</strong>（见 §5 总结：更长的再电离 → 更多小尺度功率），所以联合大/小尺度的测量可以同时约束 <span class="arithmatex">\(z_r\)</span> 和 <span class="arithmatex">\(\Delta z\)</span>。<strong>[原文]</strong></p>
+<h3 id="_21">后果<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<p>自然引出 Figure 5 的问题：除了 <span class="arithmatex">\(\Delta z\)</span>，另一个关键参数 <span class="arithmatex">\(\tau\)</span>（光学深度）如何影响峰值振幅？</p>
+<hr />
+<h2 id="figure-5-doppler-vs-tau">Figure 5 — Doppler 峰值振幅 vs. <span class="arithmatex">\(\tau\)</span><a class="headerlink" href="#figure-5-doppler-vs-tau" title="Permanent link">&para;</a></h2>
+<p><img alt="Figure 5" src="../../papers/1511.02846/figures/fig5.png" /></p>
+<p><strong>对应章节</strong>：§2.2　｜　<strong>关键公式</strong>：<span class="arithmatex">\(\ell_{\rm pk}^2 C_\ell^{\rm pk}/(2\pi) \simeq 30(\tau/0.1)^{1.9}\ \mu\text{K}^2\)</span></p>
+<h3 id="_22">前因：为什么要画这张图<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<p>Figure 4 展示了 <span class="arithmatex">\(\Delta z\)</span> 的影响。另一个关键可观测量是 Thomson 光学深度 <span class="arithmatex">\(\tau\)</span>——由 CMB 大尺度偏振独立测量（<span class="arithmatex">\(\tau \sim 0.05\)</span>–<span class="arithmatex">\(0.09\)</span>）。<span class="arithmatex">\(\tau\)</span> 直接决定了"有多少电子参与散射"。这张图给出了 <strong>Doppler 峰值振幅与 <span class="arithmatex">\(\tau\)</span> 的定量关系</strong>，以便观测者把 kSZ 测量转化为 <span class="arithmatex">\(\tau\)</span> 约束。</p>
+<h3 id="_23">图说什么<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<p>横轴 <span class="arithmatex">\(\tau\)</span>，纵轴 Doppler 峰值振幅 <span class="arithmatex">\(\ell_{\rm pk}^2 C_\ell^{\rm pk}/(2\pi)\)</span>（单位 <span class="arithmatex">\(\mu\text{K}^2\)</span>）。两组宇宙学参数（WMAP、Planck）分别画出。虚线是幂律拟合。</p>
+<h3 id="_24">怎么看<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>近乎 <span class="arithmatex">\(\tau^2\)</span></strong> 的标度——指数 1.9。这符合 Kaiser (1984) 的简单估计 <span class="arithmatex">\(C_\ell \sim \langle v^2 \rangle \tau^2\)</span>。<strong>[原文]</strong></li>
+<li>指数<strong>略小于 2</strong>：因为 <span class="arithmatex">\(\tau\)</span> 越大 → <span class="arithmatex">\(z_r\)</span> 越高 → 速度场更弱（<span class="arithmatex">\(\langle v^2 \rangle\)</span> 对 <span class="arithmatex">\(\tau\)</span> 弱反依赖）。<strong>[原文]</strong></li>
+<li><strong>当前最佳值</strong> <span class="arithmatex">\(\tau \sim 0.07\)</span> → 峰值约 <span class="arithmatex">\(15\)</span>–<span class="arithmatex">\(20\ \mu\text{K}^2\)</span>。<strong>[补充]</strong></li>
+<li>WMAP 和 Planck 的差异主要来自 <span class="arithmatex">\(n_s\)</span> 和 <span class="arithmatex">\(\sigma_8\)</span> 的不同——<span class="arithmatex">\(n_s\)</span> 更大 → 更多小尺度功率 → 速度涨落稍大。<strong>[原文]</strong></li>
+</ol>
+<h3 id="_25">需要理解的物理<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<p>为什么 <span class="arithmatex">\(C_\ell \sim \langle v^2 \rangle \tau^2\)</span>？直觉：</p>
+<ul>
+<li><span class="arithmatex">\(\tau\)</span> = 光子被散射的<strong>总概率</strong> → 信号振幅 <span class="arithmatex">\(\propto \tau\)</span></li>
+<li>kSZ 是 Doppler 效应 → <span class="arithmatex">\(\Delta T / T \propto v \cdot \tau\)</span></li>
+<li>功率谱 <span class="arithmatex">\(\propto (\Delta T)^2 \propto v^2 \cdot \tau^2\)</span></li>
+</ul>
+<p>这就是为什么 <span class="arithmatex">\(\tau\)</span> 出现平方——kSZ 是一阶效应（<span class="arithmatex">\(\propto \tau\)</span>），但功率谱是平方量。<strong>[补充]</strong></p>
+<h3 id="_26">后果<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<p>Figure 1–5 完成了<strong>解析理论</strong>部分。核心结论：大尺度 kSZ 有一个 <span class="arithmatex">\(\ell \sim 20\)</span>–<span class="arithmatex">\(30\)</span> 的 Doppler 峰，振幅 <span class="arithmatex">\(\sim 10\)</span>–<span class="arithmatex">\(30\ \mu\text{K}^2\)</span>，对 <span class="arithmatex">\(\tau\)</span> 和 <span class="arithmatex">\(\Delta z\)</span> 都很敏感。接下来 Figure 6–9 进入<strong>数值模拟</strong>，验证这些解析预测并研究解析理论无法处理的小尺度 patchy 效应。</p>
+<hr />
+<h2 id="figure-6-ksz">Figure 6 — 全天 kSZ 温度地图<a class="headerlink" href="#figure-6-ksz" title="Permanent link">&para;</a></h2>
+<p><img alt="Figure 6" src="../../papers/1511.02846/figures/fig6.png" /></p>
+<p><strong>对应章节</strong>：§3.2–3.3　｜　<strong>关键公式</strong>：Eq.3, 16</p>
+<h3 id="_27">前因：为什么要画这张图<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<p>解析理论（§2）只能处理线性情况。真实的再电离是<strong>高度非线性</strong>的——HII 区有复杂的空间结构，<span class="arithmatex">\(\delta_x\)</span> 是非高斯的"开关量"。必须用数值模拟来生成全天 kSZ 地图，才能研究小尺度上的信号。</p>
+<p><strong>模拟方法</strong>（§3.1–3.2）：
+1. 在 <span class="arithmatex">\(8\ \text{Gpc}/h\)</span> 的周期盒子中用 <span class="arithmatex">\(4096^3\)</span> 个格点演化线性密度场
+2. 用 excursion set 算法把密度场转化为再电离红移场 <span class="arithmatex">\(z_r(\mathbf{x})\)</span>
+3. 沿地球观测者到每个方向的视线，积分 <span class="arithmatex">\(\Delta T / T = \int g(z)(1+\delta)(1+\delta_x)\mathbf{v}\cdot\hat{\gamma}\,d\chi\)</span>
+4. 得到全天 Mollweide 投影的 kSZ 温度地图</p>
+<h3 id="_28">图说什么<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<p>这就是模拟产生的全天 kSZ 温度地图。<span class="arithmatex">\(\tau = 0.09\)</span>。</p>
+<h3 id="_29">怎么看<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>色标 <span class="arithmatex">\(\pm 30\ \mu\text{K}\)</span></strong>：最亮/最暗的区域 <span class="arithmatex">\(|\Delta T| \sim 30\ \mu\text{K}\)</span>，与 Figure 5 预测的 Doppler 峰振幅一致。<strong>[补充]</strong></li>
+<li><strong>大尺度色块</strong>（几度以上 = <span class="arithmatex">\(\ell \lesssim 100\)</span>）= Doppler 效应，来自大体积的 coherent bulk flows（同一方向运动的电子云）。颜色取决于电子整体运动是朝向还是远离观测者。<strong>[原文]</strong></li>
+<li><strong>小尺度噪点状结构</strong>（<span class="arithmatex">\(\ell \gtrsim 300\)</span>）= patchy + OV 效应。叠在大色块之上。<strong>[补充]</strong></li>
+<li>注意：大尺度热区（红色）内部的小尺度噪点<strong>更强烈</strong>——这是大尺度速度调制小尺度功率的表现。Figure 7 将把这个现象放大来看。<strong>[原文]</strong></li>
+</ol>
+<h3 id="_30">需要理解的物理<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h3>
+<p><strong>为什么 kSZ 地图看起来不像原初 CMB？</strong> 原初 CMB 是几乎纯高斯的随机场，kSZ 则不是——它由 <span class="arithmatex">\(\mathbf{v}(1+\delta+\delta_x+\delta\delta_x)\)</span> 产生，<span class="arithmatex">\(\delta_x\)</span> 的空间分布（HII 区的泡壁）是高度非高斯的。这导致地图上的统计特性与高斯场明显不同，Figure 9 将定量展示这一点。<strong>[补充]</strong></p>
+<h3 id="_31">后果<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h3>
+<p>全天地图验证了模拟流水线。但要看清楚每个分量的贡献，需要 Figure 7 的分量分离。</p>
+<hr />
+<h2 id="figure-7-32-times-32-ksz">Figure 7 — <span class="arithmatex">\(32° \times 32°\)</span> 区域的 kSZ 四分量分离<a class="headerlink" href="#figure-7-32-times-32-ksz" title="Permanent link">&para;</a></h2>
+<p><img alt="Figure 7" src="../../papers/1511.02846/figures/fig7.png" /></p>
+<p><strong>对应章节</strong>：§3.3　｜　<strong>关键公式</strong>：Eq.16（<span class="arithmatex">\(\Delta T \propto \mathbf{v}(1+\delta+\delta_x+\delta\delta_x)\)</span>）</p>
+<h3 id="_32">前因：为什么要画这张图<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h3>
+<p>Figure 6 的全天地图是四个物理分量的叠加。要理解每个分量的贡献，需要<strong>分别生成四张地图</strong>（每张只保留一项），然后视觉对比。</p>
+<h3 id="_33">图说什么<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h3>
+<p>取 Figure 6 的一个 <span class="arithmatex">\(32° \times 32°\)</span> 区域，分成四个面板：</p>
+<table>
+<thead>
+<tr>
+<th>面板</th>
+<th>数学内容</th>
+<th>物理名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>左下</strong></td>
+<td><span class="arithmatex">\(\mathbf{v}\)</span>（<span class="arithmatex">\(\delta = \delta_x = 0\)</span>）</td>
+<td>Doppler</td>
+<td>纯速度场</td>
+</tr>
+<tr>
+<td><strong>左上</strong></td>
+<td><span class="arithmatex">\(\mathbf{v}\delta\)</span></td>
+<td>OV（Ostriker-Vishniac）</td>
+<td>密度调制速度</td>
+</tr>
+<tr>
+<td><strong>右上</strong></td>
+<td><span class="arithmatex">\(\mathbf{v}\delta_x\)</span></td>
+<td>Patchy</td>
+<td>电离调制速度</td>
+</tr>
+<tr>
+<td><strong>右下</strong></td>
+<td><span class="arithmatex">\(\mathbf{v}(1+\delta+\delta_x+\delta\delta_x)\)</span></td>
+<td>Total</td>
+<td>四项之和</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_34">怎么看<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>左下 Doppler</strong>：大尺度的平滑热/冷区域，角尺度约 <span class="arithmatex">\(5°\)</span>–<span class="arithmatex">\(10°\)</span>。这是 coherent bulk flows——大尺度速度场在天球上的投影。<strong>[原文]</strong></li>
+<li><strong>左上 OV</strong>：小尺度结构，但振幅<strong>最弱</strong>——密度涨落 <span class="arithmatex">\(\delta\)</span> 是连续的平滑场，对速度的调制效果温和。<strong>[补充]</strong></li>
+<li><strong>右上 Patchy</strong>：小尺度结构，振幅明显更强。而且——<strong>仔细看会发现 Patchy 面板中小尺度功率增强的区域，恰好对应 Doppler 面板中热/冷色块的位置</strong>。这不是巧合！<strong>[原文]</strong></li>
+<li><strong>右下 Total</strong>：视觉上 = Doppler 的大色块 + Patchy 的小噪点叠加在上面。</li>
+</ol>
+<h3 id="_35">需要理解的物理<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h3>
+<p><strong>核心发现——大尺度速度调制小尺度 patchy 功率</strong>：</p>
+<p>为什么左下的热区 → 右上的同一区域小尺度功率更强？</p>
+<p>因为 patchy 信号 = <span class="arithmatex">\(\delta_x \cdot \mathbf{v}\)</span>。<span class="arithmatex">\(\delta_x\)</span> 的空间分布（HII 区的泡泡结构）在整个天球上大致均匀，但 <span class="arithmatex">\(\mathbf{v}\)</span> 不是——大尺度速度场在某些区域大、某些区域小。在 <span class="arithmatex">\(|\mathbf{v}|\)</span> 大的区域，乘积 <span class="arithmatex">\(\delta_x \cdot \mathbf{v}\)</span> 的振幅自然更大 → 小尺度功率更强。<strong>[原文 + 补充]</strong></p>
+<p>这种"大尺度-小尺度耦合"是 patchy kSZ 最显著的<strong>非高斯特征</strong>——高斯随机场不具有这种特性。未来可以利用这一特征把 kSZ 从其他小尺度噪声（如 SZ 热效应、点源）中分离出来。<strong>[补充]</strong></p>
+<h3 id="_36">后果<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h3>
+<p>视觉对比告诉我们定性的结论。要定量比较，需要 Figure 8 的功率谱。</p>
+<hr />
+<h2 id="figure-8-vs-patchy">Figure 8 — 模拟 vs. 解析功率谱：大尺度解析完胜，小尺度 patchy 接管<a class="headerlink" href="#figure-8-vs-patchy" title="Permanent link">&para;</a></h2>
+<p><img alt="Figure 8" src="../../papers/1511.02846/figures/fig8.png" /></p>
+<p><strong>对应章节</strong>：§3.4　｜　<strong>关键公式</strong>：Eq.4, 7, 18</p>
+<h3 id="_37">前因：为什么要画这张图<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h3>
+<p>有了 Figure 7 的四张地图，自然要计算它们的功率谱，并与 §2 的解析预测对比。这张图有两个目的：(1) <strong>验证模拟流水线</strong>——解析结果和数值结果应该在大尺度上一致；(2) <strong>定量展示 Doppler 和 patchy 的相对重要性在哪个 <span class="arithmatex">\(\ell\)</span> 切换</strong>。</p>
+<h3 id="_38">图说什么<a class="headerlink" href="#_38" title="Permanent link">&para;</a></h3>
+<p>横轴 <span class="arithmatex">\(\ell\)</span>（<span class="arithmatex">\(3\)</span>–<span class="arithmatex">\(3000\)</span>），纵轴 <span class="arithmatex">\(\ell^2 C_\ell / (2\pi)\)</span>（<span class="arithmatex">\(\mu\text{K}^2\)</span>）。多条曲线：</p>
+<table>
+<thead>
+<tr>
+<th>曲线</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>蓝色实线</td>
+<td>纯 <span class="arithmatex">\(\mathbf{v}\)</span>（Doppler 模拟）</td>
+</tr>
+<tr>
+<td>红色平滑线</td>
+<td>§2 的解析 Doppler 公式（Eq.7）</td>
+</tr>
+<tr>
+<td>黑色实线</td>
+<td>Total（四项全部）</td>
+</tr>
+<tr>
+<td>阴影</td>
+<td><span class="arithmatex">\(1\sigma\)</span> 和 <span class="arithmatex">\(2\sigma\)</span> 宇宙方差</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_39">怎么看<a class="headerlink" href="#_39" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>蓝色 ≈ 红色</strong>（<span class="arithmatex">\(\ell \lesssim 200\)</span>）：解析公式与模拟完美一致 → <strong>模拟流水线通过验证</strong>。解析公式唯一用到的模拟信息是 <span class="arithmatex">\(x(z)\)</span>（再电离历史），其他全是理论计算。<strong>[原文]</strong></li>
+<li><strong><span class="arithmatex">\(\ell \sim 20\)</span>–<span class="arithmatex">\(30\)</span></strong>：Doppler 峰清晰可见，<span class="arithmatex">\(\ell^2 C_\ell / (2\pi) \sim 15\)</span>–<span class="arithmatex">\(30\ \mu\text{K}^2\)</span>。<strong>[原文]</strong></li>
+<li><strong><span class="arithmatex">\(\ell \lesssim 200\)</span></strong>：纯 Doppler 线（蓝色）与 Total 线（黑色）几乎重合 → <strong>密度和电离涨落在大尺度上可以忽略</strong>。<strong>[原文]</strong></li>
+<li><strong><span class="arithmatex">\(\ell \gtrsim 300\)</span></strong>：Total 线明显高于 Doppler 线 → patchy + OV 效应开始主导。功率趋于一个"平台"，<span class="arithmatex">\(\ell^2 C_\ell / (2\pi) \sim 1\)</span>–<span class="arithmatex">\(5\ \mu\text{K}^2\)</span>。<strong>[原文]</strong></li>
+<li><strong>宇宙方差</strong>（阴影）在 <span class="arithmatex">\(\ell \lesssim 10\)</span> 非常大 → 大尺度 Doppler 峰的测量不可避免地受到宇宙方差限制。<strong>[补充]</strong></li>
+<li>OV 的减去与否不影响 <span class="arithmatex">\(\ell \lesssim 200\)</span> 的结论 → OV 在大尺度上也可忽略。<strong>[原文]</strong></li>
+</ol>
+<h3 id="_40">需要理解的物理<a class="headerlink" href="#_40" title="Permanent link">&para;</a></h3>
+<p><strong>两个尺度区间，两种物理</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>尺度</th>
+<th>主导机制</th>
+<th>物理来源</th>
+<th>对再电离的敏感方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\ell \lesssim 200\)</span></td>
+<td>Doppler</td>
+<td>大尺度 coherent bulk flows</td>
+<td>对 <span class="arithmatex">\(\tau\)</span> 和 <span class="arithmatex">\(\Delta z\)</span> 敏感（再电离越短信号越大）</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ell \gtrsim 300\)</span></td>
+<td>Patchy + OV</td>
+<td>HII 区的不均匀电离</td>
+<td>对 <span class="arithmatex">\(\Delta z\)</span> 和 HII 区尺度/分布敏感（再电离越长信号越大）</td>
+</tr>
+</tbody>
+</table>
+<p>两个区间对 <span class="arithmatex">\(\Delta z\)</span> 的依赖<strong>方向相反</strong>——这是全文最重要的观测预言之一。<strong>[原文]</strong></p>
+<h3 id="_41">后果<a class="headerlink" href="#_41" title="Permanent link">&para;</a></h3>
+<p>Figure 9 接下来深入解剖小尺度（<span class="arithmatex">\(\ell \gtrsim 300\)</span>）的 patchy 功率谱——它由哪些分量主导？</p>
+<hr />
+<h2 id="figure-9-patchy">Figure 9 — Patchy 功率谱的十项解剖<a class="headerlink" href="#figure-9-patchy" title="Permanent link">&para;</a></h2>
+<p><img alt="Figure 9" src="../../papers/1511.02846/figures/fig9.png" /></p>
+<p><strong>对应章节</strong>：§3.4　｜　<strong>关键公式</strong>：Eq.17–20</p>
+<h3 id="_42">前因：为什么要画这张图<a class="headerlink" href="#_42" title="Permanent link">&para;</a></h3>
+<p>Figure 8 表明小尺度被 patchy 效应主导，但"patchy"不是一个单一的东西——它是 <span class="arithmatex">\((1+\delta+\delta_x+\delta\delta_x)\)</span> 四项展开后 <span class="arithmatex">\(C_4^2 + 4 = 10\)</span> 个自/交叉相关项之和（Eq.17）。这张图把这十项（减去已知的 Doppler 和 OV 后剩余七项）逐一画出来，回答：<strong>小尺度 kSZ 到底被哪一项主导？</strong></p>
+<h3 id="_43">图说什么<a class="headerlink" href="#_43" title="Permanent link">&para;</a></h3>
+<p>减去了 Doppler（<span class="arithmatex">\(\langle\mathbf{v}\cdot\mathbf{v}\rangle\)</span>）和 OV（<span class="arithmatex">\(\langle\mathbf{v}\delta\cdot\mathbf{v}\delta\rangle\)</span>）后的七项功率谱。标为 "Total" 的黑线是七项之和。</p>
+<h3 id="_44">怎么看<a class="headerlink" href="#_44" title="Permanent link">&para;</a></h3>
+<p><strong>按贡献从大到小排序</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>排名</th>
+<th>项</th>
+<th>在 <span class="arithmatex">\(\ell \sim 3000\)</span> 处的贡献</th>
+<th>特征</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><span class="arithmatex">\(\langle\mathbf{v}\delta_x\cdot\mathbf{v}\delta_x\rangle\)</span>（patchy-patchy）</td>
+<td><strong>~65%</strong></td>
+<td>最主导，形状与 Total 近似</td>
+</tr>
+<tr>
+<td>2</td>
+<td><span class="arithmatex">\(\langle\mathbf{v}\delta\cdot\mathbf{v}\delta_x\rangle\)</span>（OV-patchy）</td>
+<td><strong>~13%</strong></td>
+<td>振幅约 patchy 的 1/5</td>
+</tr>
+<tr>
+<td>3</td>
+<td><span class="arithmatex">\(\langle\mathbf{v}\delta_x\cdot\mathbf{v}\delta\delta_x\rangle\)</span>（patchy-三阶）</td>
+<td>可比 OV-patchy</td>
+<td>在 <strong><span class="arithmatex">\(\ell \sim 900\)</span> 翻转符号</strong>（从正变负）</td>
+</tr>
+<tr>
+<td>4</td>
+<td><span class="arithmatex">\(\langle\mathbf{v}\delta\delta_x\cdot\mathbf{v}\delta\delta_x\rangle\)</span>（三阶自相关）</td>
+<td><strong>~5%</strong></td>
+<td>六阶统计量，出乎意料地不小</td>
+</tr>
+<tr>
+<td>5–7</td>
+<td>含纯 <span class="arithmatex">\(\mathbf{v}\)</span> 的交叉项</td>
+<td><strong><span class="arithmatex">\(&lt; 0.01\ \mu\text{K}^2\)</span></strong></td>
+<td>完全可忽略（数值噪声水平）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>[原文]</strong></p>
+<h3 id="_45">怎么看——关键特征详解<a class="headerlink" href="#_45" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Patchy-patchy 绝对主导</strong>：这符合直觉——<span class="arithmatex">\(\delta_x\)</span> 是一个"硬边界"开关量（HII 区内 <span class="arithmatex">\(\sim +1/\bar{x}-1\)</span>，中性区 <span class="arithmatex">\(= -1\)</span>），空间跳变剧烈，与速度场相乘后产生的信号远大于平滑的密度涨落 <span class="arithmatex">\(\delta\)</span>。<strong>[补充]</strong></p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\ell \sim 900\)</span> 符号翻转</strong>：<span class="arithmatex">\(\langle\mathbf{v}\delta_x\cdot\mathbf{v}\delta\delta_x\rangle\)</span> 从正变负。<span class="arithmatex">\(\ell \sim 900\)</span> 对应共动尺度 <span class="arithmatex">\(\sim 15\)</span>–<span class="arithmatex">\(20\)</span> Mpc —— 非常接近再电离中点的<strong>典型 HII 区半径</strong>。物理上：HII 区内部是密度峰（<span class="arithmatex">\(\delta &gt; 0\)</span>），越过 HII 区边界后密度下降（<span class="arithmatex">\(\delta &lt; 0\)</span>），所以 <span class="arithmatex">\(\delta \cdot \delta_x\)</span> 的相关在 HII 区尺度上翻转。<strong>[原文 + 补充]</strong></p>
+</li>
+<li>
+<p><strong>含纯 <span class="arithmatex">\(\mathbf{v}\)</span> 的交叉项为零</strong>：<span class="arithmatex">\(\mathbf{v}\)</span> 是零均值的矢量场，<span class="arithmatex">\(\delta_x\)</span> 是标量场。在线性阶，<span class="arithmatex">\(\langle\mathbf{v}\cdot\mathbf{v}\delta_x\rangle = 0\)</span>——因为 <span class="arithmatex">\(\mathbf{v}\)</span> 的方向与 <span class="arithmatex">\(\delta_x\)</span> 没有系统性的对齐。<strong>[补充]</strong></p>
+</li>
+<li>
+<p><strong>高斯近似（Eq.20）低估实际值</strong>：用 Wick 定理（四阶矩 → 二阶矩之积）近似 patchy-patchy 项，结果比模拟值<strong>低 10–30%</strong>。差异来自连通四阶矩——<span class="arithmatex">\(\delta_x\)</span> 的非高斯性是不可忽略的。这意味着以往的解析模型系统性低估了 patchy kSZ 功率谱。<strong>[原文]</strong></p>
+</li>
+</ol>
+<h3 id="_46">需要理解的物理<a class="headerlink" href="#_46" title="Permanent link">&para;</a></h3>
+<p><strong>为什么这个分解如此重要？</strong></p>
+<ul>
+<li>以往的解析模型（McQuinn et al. 2005 等）只能计算 patchy-patchy 项的高斯近似（Eq.20），且忽略了 OV-patchy 交叉和三阶项。本文首次用模拟显式分离了所有十项，发现 (a) 高斯近似低估 10–30%，(b) 三阶项贡献 5% 不可忽略，(c) OV-patchy 有 13% 的贡献。<strong>[原文]</strong></li>
+<li>这些结果为未来的解析模型指明了改进方向：至少需要包含连通四阶矩和 OV-patchy 交叉。<strong>[补充]</strong></li>
+</ul>
+<h3 id="_47">后果<a class="headerlink" href="#_47" title="Permanent link">&para;</a></h3>
+<p>Figure 1–9 完成了 kSZ <strong>自功率谱</strong>的全部分析。接下来 Figure 10–11 转向一个新问题：能不能通过<strong>交叉相关</strong>来探测 kSZ？</p>
+<hr />
+<h2 id="figure-10-ksz21cm-ell-sim-100-510">Figure 10 — kSZ–21cm 交叉相关：正相关、<span class="arithmatex">\(\ell \sim 100\)</span> 峰、5–10σ 可探测<a class="headerlink" href="#figure-10-ksz21cm-ell-sim-100-510" title="Permanent link">&para;</a></h2>
+<p><img alt="Figure 10" src="../../papers/1511.02846/figures/fig10.png" /></p>
+<p><strong>对应章节</strong>：§4.1　｜　<strong>关键公式</strong>：Eq.21–24</p>
+<h3 id="_48">前因：为什么要画这张图<a class="headerlink" href="#_48" title="Permanent link">&para;</a></h3>
+<p>kSZ 自功率谱有一个致命问题：<strong>它把所有红移的信号堆在一起</strong>，无法分辨哪些来自再电离、哪些来自后期。而且 kSZ 信号在小尺度上被热 SZ 效应（tSZ）、点源等前景淹没。</p>
+<p>解决方案：<strong>与 21 cm 做交叉相关</strong>。21 cm 信号天然带有频率（= 红移）信息，而且 CMB 的系统偏差（前景、噪声）与 21 cm 的系统偏差不相关 → 交叉相关更"干净"。</p>
+<p>但交叉相关能测到吗？信噪比够吗？</p>
+<h3 id="_49">图说什么<a class="headerlink" href="#_49" title="Permanent link">&para;</a></h3>
+<p>三个子面板（从上到下）：</p>
+<table>
+<thead>
+<tr>
+<th>面板</th>
+<th>横轴</th>
+<th>纵轴</th>
+<th>展示内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上</td>
+<td><span class="arithmatex">\(\ell\)</span></td>
+<td><span class="arithmatex">\(C_\ell^{T\nu}\)</span></td>
+<td>kSZ 与 21 cm 的交叉功率谱</td>
+</tr>
+<tr>
+<td>中</td>
+<td><span class="arithmatex">\(\ell\)</span></td>
+<td>cumulative S/N</td>
+<td>积分信噪比（从 <span class="arithmatex">\(\ell = 3\)</span> 到该 <span class="arithmatex">\(\ell\)</span>）</td>
+</tr>
+<tr>
+<td>下</td>
+<td><span class="arithmatex">\(\ell\)</span></td>
+<td><span class="arithmatex">\(r_\ell^{k\nu}\)</span></td>
+<td>每个 <span class="arithmatex">\(\ell\)</span> 模式的信噪比</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_50">怎么看<a class="headerlink" href="#_50" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>上面板</strong>：交叉相关在 <span class="arithmatex">\(\ell \sim 100\)</span> 处有一个<strong>正峰</strong>。灰色散点是单个 <span class="arithmatex">\(\ell\)</span> 模式（方差很大），实线是 bin 平均。<strong>[原文]</strong></p>
+</li>
+<li>
+<p><strong>为什么是正的？</strong> 这很微妙——Figure 2 表明再电离期间密度峰 → kSZ 冷点（负相关）。但 21 cm 端又翻转了一次：高密度区电离源更多 → HI 更少 → 21 cm 信号更弱。两次"负" → 正相关。<strong>[原文]</strong></p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(\ell \sim 100\)</span> 的峰值位置</strong>：对应物质功率谱 <span class="arithmatex">\(P(k)\)</span> 的峰值 <span class="arithmatex">\(k \sim 0.01\ \text{Mpc}^{-1}\)</span> 在 <span class="arithmatex">\(\chi(z_r) \sim 10\)</span> Gpc 处的角投影 → <span class="arithmatex">\(\ell \sim k\chi \sim 100\)</span>。<strong>[原文]</strong></p>
+</li>
+<li>
+<p><strong>中面板</strong>：积分信噪比在 <span class="arithmatex">\(\ell \sim 500\)</span> 处达到 ~<strong>5–10σ</strong>。黑实线 = Eq.24 的解析估计；红虚线 = Monte Carlo；阴影 = <span class="arithmatex">\(1\sigma\)</span>/<span class="arithmatex">\(2\sigma\)</span> 范围。两者高度一致 → 非高斯效应不严重影响信噪。<strong>[原文]</strong></p>
+</li>
+<li>
+<p><strong>下面板</strong>：单模式信噪比 <span class="arithmatex">\(r_\ell^{k\nu}\)</span> 在 <span class="arithmatex">\(\ell \sim 100\)</span> 处峰值 ~0.01–0.02——非常小！但累加 <span class="arithmatex">\((2\ell+1)\)</span> 个独立模式后总信噪可以达到几个 σ。<strong>[补充]</strong></p>
+</li>
+</ol>
+<h3 id="_51">需要理解的物理<a class="headerlink" href="#_51" title="Permanent link">&para;</a></h3>
+<p><strong>为什么单模式信噪这么低？</strong></p>
+<p>因为 CMB 温度的主要贡献是原初涨落（<span class="arithmatex">\(C_\ell^{\rm pp} \gg C_\ell^{\rm kk}\)</span>），kSZ 只是一个微小的附加信号。交叉相关的信噪比 ∝ <span class="arithmatex">\(C_\ell^{k\nu} / \sqrt{C_\ell^{TT} C_\ell^{\nu\nu}}\)</span>，分母中的 <span class="arithmatex">\(C_\ell^{TT} \approx C_\ell^{\rm pp}\)</span> 很大 → 每个 <span class="arithmatex">\(\ell\)</span> 的信噪很小。好在有 <span class="arithmatex">\((2\ell+1)\)</span> 个独立模式可以累加。<strong>[补充]</strong></p>
+<p><strong>假设条件</strong>：这里的 5–10σ 是在<strong>最理想条件</strong>下（全天观测、无噪声、无前景）。现实中前景清除、有限天区、仪器噪声都会降低信噪比。但交叉相关的关键优势是：CMB 前景和 21 cm 前景<strong>性质完全不同</strong>，不相关 → 不贡献假信号。<strong>[原文 + 补充]</strong></p>
+<h3 id="_52">后果<a class="headerlink" href="#_52" title="Permanent link">&para;</a></h3>
+<p>知道了交叉相关的 <span class="arithmatex">\(\ell\)</span> 依赖后，下一个问题是：它的<strong>红移/频率</strong>依赖是什么？这直接关系到能不能用它追踪再电离历史。</p>
+<hr />
+<h2 id="figure-11-ksz21cm">Figure 11 — kSZ–21cm 交叉相关的红移切片：追踪再电离历史<a class="headerlink" href="#figure-11-ksz21cm" title="Permanent link">&para;</a></h2>
+<p><img alt="Figure 11" src="../../papers/1511.02846/figures/fig11.png" /></p>
+<p><strong>对应章节</strong>：§4.2　｜　<strong>关键公式</strong>：<span class="arithmatex">\(\mathcal{P}^{T\nu}(\nu_i) = \sum_\ell \int w_\ell(\nu) C_\ell^{T\nu}(\nu)\,d\nu\)</span></p>
+<h3 id="_53">前因：为什么要画这张图<a class="headerlink" href="#_53" title="Permanent link">&para;</a></h3>
+<p>Figure 10 展示了所有红移加在一起的交叉相关。但 21 cm 的独特优势是<strong>频率 = 红移</strong>（<span class="arithmatex">\(\nu = 1420/(1+z)\)</span> MHz）。如果把 21 cm 观测按频率分 bin，就可以看到交叉相关的<strong>红移演化</strong>——这直接追踪再电离历史 <span class="arithmatex">\(x(z)\)</span>。</p>
+<h3 id="_54">图说什么<a class="headerlink" href="#_54" title="Permanent link">&para;</a></h3>
+<p>将交叉相关沿 <span class="arithmatex">\(\ell\)</span>（到 500）积分后，画出对 21 cm 频率（<span class="arithmatex">\(\nu\)</span>，上轴 = 红移 <span class="arithmatex">\(z\)</span>）的依赖。每个点是 <span class="arithmatex">\(\Delta\nu = 20\)</span> MHz 的频率 bin。</p>
+<h3 id="_55">怎么看<a class="headerlink" href="#_55" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>信号峰值在 <span class="arithmatex">\(\nu \sim 130\)</span>–<span class="arithmatex">\(160\)</span> MHz</strong>（<span class="arithmatex">\(z \sim 8\)</span>–<span class="arithmatex">\(12\)</span>）= 再电离正在进行的中段。<strong>[原文]</strong></li>
+<li><strong>高频端</strong>（<span class="arithmatex">\(\nu &gt; 200\)</span> MHz，<span class="arithmatex">\(z &lt; 6\)</span>）→ 再电离已完成，<span class="arithmatex">\(\delta_x = 0\)</span> → 没有 patchy 信号 → 交叉相关<strong>消失</strong>。<strong>[补充]</strong></li>
+<li><strong>低频端</strong>（<span class="arithmatex">\(\nu &lt; 100\)</span> MHz，<span class="arithmatex">\(z &gt; 14\)</span>）→ 宇宙几乎全部中性，<span class="arithmatex">\(x \approx 0\)</span> → kSZ 信号极弱 → 消失。<strong>[补充]</strong></li>
+<li><strong>峰的位置和宽度直接编码了 <span class="arithmatex">\(x(z)\)</span></strong> → 红移分辨率约 <span class="arithmatex">\(\Delta z \sim 1\)</span>（对应 <span class="arithmatex">\(\Delta\nu \sim 20\)</span> MHz）。<strong>[原文]</strong></li>
+</ol>
+<h3 id="_56">需要理解的物理<a class="headerlink" href="#_56" title="Permanent link">&para;</a></h3>
+<p><strong>这张图是全文最具观测价值的结果之一</strong>。</p>
+<p>纯 kSZ 功率谱（Figure 8）是所有红移的积分——你只看到一个数字，不知道信号来自 <span class="arithmatex">\(z = 7\)</span> 还是 <span class="arithmatex">\(z = 12\)</span>。但这张图告诉你：如果你有一台覆盖 100–200 MHz 的射电阵列（如 SKA、HERA），可以逐频率测交叉相关，每 20 MHz 一个 bin → 得到再电离历史 <span class="arithmatex">\(x(z)\)</span> 的粗略形状。<strong>[补充]</strong></p>
+<p><strong>为什么 <span class="arithmatex">\(\Delta\nu = 20\)</span> MHz？</strong> 太细（<span class="arithmatex">\(\Delta\nu = 1\)</span> MHz）→ 每个 bin 里信噪太低；太粗（<span class="arithmatex">\(\Delta\nu = 100\)</span> MHz）→ 红移信息被平均掉。<span class="arithmatex">\(\Delta\nu \sim 20\)</span> MHz（<span class="arithmatex">\(\Delta z \sim 1\)</span>）是一个折中——足够分辨再电离从"开始"到"结束"的演化，同时每个 bin 有足够信噪。<strong>[原文]</strong></p>
+<h3 id="_57">后果<a class="headerlink" href="#_57" title="Permanent link">&para;</a></h3>
+<p>这是论文的最后一张关键物理图。它回答了"kSZ–21cm 交叉相关能告诉我们什么"——答案是：再电离发生在哪些红移、持续了多久。</p>
+<hr />
+<h2 id="figure-12">Figure 12 — （论文正文未引用）<a class="headerlink" href="#figure-12" title="Permanent link">&para;</a></h2>
+<p><img alt="Figure 12" src="../../papers/1511.02846/figures/fig12.png" /></p>
+<p><strong>文件</strong>：<code>fig12.pdf</code></p>
+<p>此图存在于 <code>figures/</code> 目录中但未被论文正文或 <code>figures.tex</code> 引用。可能是作者在准备论文时生成的辅助图（如不同参数的比较），最终未被采用。</p>
+<hr />
+<h2 id="1">宇宙学参数（论文脚注 1）<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>本文无独立编号的表格。宇宙学参数以脚注形式给出，论文的所有计算使用以下两组参数：</p>
+<table>
+<thead>
+<tr>
+<th>参数集</th>
+<th><span class="arithmatex">\(\Omega_m\)</span></th>
+<th><span class="arithmatex">\(\Omega_b\)</span></th>
+<th><span class="arithmatex">\(h\)</span></th>
+<th><span class="arithmatex">\(n_s\)</span></th>
+<th><span class="arithmatex">\(\sigma_8\)</span></th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WMAP 2013</td>
+<td>0.286</td>
+<td>0.0463</td>
+<td>0.69</td>
+<td>0.96</td>
+<td>0.82</td>
+<td>WMAP 9-year</td>
+</tr>
+<tr>
+<td>Planck 2015</td>
+<td>0.31</td>
+<td>0.0486</td>
+<td>0.68</td>
+<td>0.967</td>
+<td>0.816</td>
+<td>Planck 2015</td>
+</tr>
+</tbody>
+</table>
+<p>两组参数的主要差异：Planck 的 <span class="arithmatex">\(n_s\)</span> 更接近 1（更少红倾斜）、<span class="arithmatex">\(\sigma_8\)</span> 稍低。影响 kSZ 功率谱的主要途径是改变速度涨落的振幅。<strong>[补充]</strong></p>
+<hr />
+<h2 id="_58">全文结论一览<a class="headerlink" href="#_58" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>结论</th>
+<th>对应图</th>
+<th>关键数字</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kSZ 功率谱有两个特征：<span class="arithmatex">\(\ell \sim 20\)</span>–<span class="arithmatex">\(30\)</span> Doppler 峰 + <span class="arithmatex">\(\ell \gtrsim 300\)</span> patchy 平台</td>
+<td>Fig 8</td>
+<td>峰 ~<span class="arithmatex">\(10\)</span>–<span class="arithmatex">\(30\ \mu\text{K}^2\)</span>；平台 ~<span class="arithmatex">\(1\)</span>–<span class="arithmatex">\(5\ \mu\text{K}^2\)</span></td>
+</tr>
+<tr>
+<td>Doppler 峰的振幅 <span class="arithmatex">\(\propto \tau^{1.9}\)</span></td>
+<td>Fig 5</td>
+<td>当前 <span class="arithmatex">\(\tau \sim 0.07\)</span> → ~<span class="arithmatex">\(15\)</span>–<span class="arithmatex">\(20\ \mu\text{K}^2\)</span></td>
+</tr>
+<tr>
+<td>再电离越快 → Doppler 峰越大；再电离越长 → patchy 平台越大</td>
+<td>Fig 4, 8</td>
+<td><span class="arithmatex">\(\Delta z\)</span> 和两个尺度区间的关系<strong>相反</strong></td>
+</tr>
+<tr>
+<td>Patchy 功率谱中 patchy-patchy 项占 ~65%</td>
+<td>Fig 9</td>
+<td><span class="arithmatex">\(\langle\mathbf{v}\delta_x\cdot\mathbf{v}\delta_x\rangle\)</span> 主导</td>
+</tr>
+<tr>
+<td>高斯近似低估 patchy 功率谱 10–30%</td>
+<td>Fig 9</td>
+<td>连通四阶矩不可忽略</td>
+</tr>
+<tr>
+<td>kSZ–21cm 交叉相关可在理想条件下 5–10σ 探测</td>
+<td>Fig 10</td>
+<td>全天、无噪声、无前景</td>
+</tr>
+<tr>
+<td>交叉相关的频率依赖追踪再电离历史</td>
+<td>Fig 11</td>
+<td><span class="arithmatex">\(\Delta z \sim 1\)</span> 的分辨率</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+    
+  </body>
+</html>

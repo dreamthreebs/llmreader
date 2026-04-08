@@ -1,0 +1,4541 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI 辅助的科研论文精读笔记">
+      
+      
+      
+      
+        <link rel="prev" href="../%E6%95%85%E4%BA%8B%E7%89%88/">
+      
+      
+        <link rel="next" href="../../astro-ph.0501504/%E6%80%BB%E7%BA%B2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>图表版 - Paper Reader</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#spt-3g-d1-cmb-temperature-and-polarization-power-spectra-and-cosmology" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Paper Reader" class="md-header__button md-logo" aria-label="Paper Reader" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Paper Reader
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              图表版
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pointsource/llmreader" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../1511.02846/%E6%80%BB%E7%BA%B2/" class="md-tabs__link">
+          
+  
+  
+  论文笔记
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Paper Reader" class="md-nav__button md-logo" aria-label="Paper Reader" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Paper Reader
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pointsource/llmreader" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    论文笔记
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    论文笔记
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1511.02846 — The Kinetic Sunyaev-Zel'dovich Effect from Reionizat...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1511.02846 — The Kinetic Sunyaev-Zel'dovich Effect from Reionizat...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1511.02846/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1511.02846/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1511.02846/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1511.02846/%C2%A71/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    精读 §1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1511.02846/%C2%A72/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    精读 §2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1511.02846/%C2%A73/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    精读 §3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2002.06197 — An Improved Measurement of the Secondary Cosmic Micr...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2002.06197 — An Improved Measurement of the Secondary Cosmic Micr...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2002.06197/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2002.06197/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2002.06197/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2504.09725 — Rapid and Late Cosmic Reionization Driven by Massive...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2504.09725 — Rapid and Late Cosmic Reionization Driven by Massive...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2504.09725/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2504.09725/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2504.09725/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2506.20707 — SPT-3G D1: CMB TT/TE/EE Power Spectra and Cosmology ...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2506.20707 — SPT-3G D1: CMB TT/TE/EE Power Spectra and Cosmology ...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        物理背景速查
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-1-band-powers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 1: 三大实验 band powers 对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 1: 三大实验 band powers 对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tab-ii-lambdacdm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tab II: \(\Lambda\)CDM 参数约束总表
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tab II: \(\Lambda\)CDM 参数约束总表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-2-lambdacdm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 2: \(\Lambda\)CDM 参数三角图
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 2: \(\Lambda\)CDM 参数三角图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-3-band-powers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 3: 所有频率组合的 Band Powers 与残差
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 3: 所有频率组合的 Band Powers 与残差">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-4-snr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 4: 信噪比（SNR）对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 4: 信噪比（SNR）对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-5-tt-vs-te-vs-ee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 5: TT vs. TE vs. EE 独立约束对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 5: TT vs. TE vs. EE 独立约束对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-6-h_0-hubble" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 6: \(H_0\) 汇总 — Hubble 张力可视化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 6: \(H_0\) 汇总 — Hubble 张力可视化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-7-sigma_8omega_m-s_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 7: \(\sigma_8\)–\(\Omega_m\) 平面 — \(S_8\) 张力状态
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 7: \(\sigma_8\)–\(\Omega_m\) 平面 — \(S_8\) 张力状态">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-8-a_rm-lens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 8: \(A_{\rm lens}\) 参数 — 透镜异常检验
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 8: \(A_{\rm lens}\) 参数 — 透镜异常检验">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-9-omega_mhr_d-cmb-vs-desi-bao-28sigma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 9: \(\Omega_m\)–\(hr_d\) 平面 — CMB vs. DESI BAO 的 \(2.8\sigma\) 张力
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 9: \(\Omega_m\)–\(hr_d\) 平面 — CMB vs. DESI BAO 的 \(2.8\sigma\) 张力">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-10-cmball-vs-cmballdesi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 10: 扩展模型总结 — CMBall vs. CMBall+DESI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 10: 扩展模型总结 — CMBall vs. CMBall+DESI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_56" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_57" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        全文图表逻辑链
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_58" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spt-3g-d1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SPT-3G D1 的三个核心成就
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_59" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        未解决的问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_60" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        展望
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    astro-ph/0501504 — Comparison of Map-Making Algorithms for CMB Experiments
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    astro-ph/0501504 — Comparison of Map-Making Algorithms for CMB Experiments
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../astro-ph.0501504/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../astro-ph.0501504/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../astro-ph.0501504/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1203.4219 — Evidence of Galaxy Cluster Motions with the Kinemati...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1203.4219 — Evidence of Galaxy Cluster Motions with the Kinemati...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1203.4219/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1203.4219/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1203.4219/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1510.06442 — Evidence for the Kinematic Sunyaev-Zel'dovich Effect...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1510.06442 — Evidence for the Kinematic Sunyaev-Zel'dovich Effect...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1510.06442/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1510.06442/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1510.06442/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1603.03904 — Detection of the Kinematic Sunyaev-Zel'dovich Effect...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1603.03904 — Detection of the Kinematic Sunyaev-Zel'dovich Effect...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1603.03904/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1603.03904/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1603.03904/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2101.08373 — The Atacama Cosmology Telescope: Probing the Baryon ...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2101.08373 — The Atacama Cosmology Telescope: Probing the Baryon ...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2101.08373/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2101.08373/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2101.08373/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2307.11894 — Pairwise kSZ Signal Extraction Efficacy and Optical ...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2307.11894 — Pairwise kSZ Signal Extraction Efficacy and Optical ...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2307.11894/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2307.11894/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2307.11894/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_11" id="__nav_2_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2511.23417 — Detection of the Pairwise Kinematic Sunyaev-Zel'dovi...
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2511.23417 — Detection of the Pairwise Kinematic Sunyaev-Zel'dovi...
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2511.23417/%E6%80%BB%E7%BA%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    总纲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2511.23417/%E6%95%85%E4%BA%8B%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故事版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2511.23417/%E5%9B%BE%E8%A1%A8%E7%89%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    图表版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        物理背景速查
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-1-band-powers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 1: 三大实验 band powers 对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 1: 三大实验 band powers 对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tab-ii-lambdacdm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tab II: \(\Lambda\)CDM 参数约束总表
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tab II: \(\Lambda\)CDM 参数约束总表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-2-lambdacdm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 2: \(\Lambda\)CDM 参数三角图
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 2: \(\Lambda\)CDM 参数三角图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-3-band-powers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 3: 所有频率组合的 Band Powers 与残差
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 3: 所有频率组合的 Band Powers 与残差">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-4-snr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 4: 信噪比（SNR）对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 4: 信噪比（SNR）对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-5-tt-vs-te-vs-ee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 5: TT vs. TE vs. EE 独立约束对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 5: TT vs. TE vs. EE 独立约束对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-6-h_0-hubble" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 6: \(H_0\) 汇总 — Hubble 张力可视化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 6: \(H_0\) 汇总 — Hubble 张力可视化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-7-sigma_8omega_m-s_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 7: \(\sigma_8\)–\(\Omega_m\) 平面 — \(S_8\) 张力状态
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 7: \(\sigma_8\)–\(\Omega_m\) 平面 — \(S_8\) 张力状态">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-8-a_rm-lens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 8: \(A_{\rm lens}\) 参数 — 透镜异常检验
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 8: \(A_{\rm lens}\) 参数 — 透镜异常检验">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-9-omega_mhr_d-cmb-vs-desi-bao-28sigma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 9: \(\Omega_m\)–\(hr_d\) 平面 — CMB vs. DESI BAO 的 \(2.8\sigma\) 张力
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 9: \(\Omega_m\)–\(hr_d\) 平面 — CMB vs. DESI BAO 的 \(2.8\sigma\) 张力">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fig-10-cmball-vs-cmballdesi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fig 10: 扩展模型总结 — CMBall vs. CMBall+DESI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fig 10: 扩展模型总结 — CMBall vs. CMBall+DESI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图/表说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        需要理解的物理/公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_56" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        后果
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_57" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        全文图表逻辑链
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_58" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spt-3g-d1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SPT-3G D1 的三个核心成就
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_59" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        未解决的问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_60" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        展望
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="spt-3g-d1-cmb-temperature-and-polarization-power-spectra-and-cosmology">SPT-3G D1: CMB Temperature and Polarization Power Spectra and Cosmology — 图表版<a class="headerlink" href="#spt-3g-d1-cmb-temperature-and-polarization-power-spectra-and-cosmology" title="Permanent link">&para;</a></h1>
+<ul>
+<li><strong>arXiv</strong>: 2506.20707</li>
+<li><strong>作者</strong>: Camphuis, Quan, Balkenhol et al. (SPT Collaboration, 2025)</li>
+<li><strong>阅读日期</strong>: 2026-03-16</li>
+<li><strong>论文规模</strong>: 83 页 / 42 图 / 11 表</li>
+<li><strong>本文精选</strong>: 10 张核心图/表</li>
+</ul>
+<hr />
+<h2 id="_1">物理背景速查<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>在进入逐图解读之前，先列出贯穿全文的关键物理量和概念。</p>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>名称</th>
+<th>物理含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\Omega_b h^2\)</span></td>
+<td>重子物质密度</td>
+<td>控制声学峰的相对高度（奇偶峰比）</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\Omega_c h^2\)</span></td>
+<td>冷暗物质密度</td>
+<td>控制物质-辐射等时（equality）的红移，影响峰高和转折尺度</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\theta_*\)</span></td>
+<td>声学视角（angular scale of sound horizon）</td>
+<td>最精确的 CMB 参数，锚定峰的位置</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(n_s\)</span></td>
+<td>原初标量谱指数</td>
+<td>度量原初扰动功率谱的倾斜，<span class="arithmatex">\(n_s &lt; 1\)</span> 意味着红谱（大尺度功率略多）</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ln(10^{10}A_s)\)</span></td>
+<td>原初扰动振幅（对数）</td>
+<td>决定功率谱整体归一化</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\tau_{\rm reio}\)</span></td>
+<td>再电离光学深度</td>
+<td>晚期再电离对大角度偏振的抑制，CMB 功率谱振幅 <span class="arithmatex">\(\propto A_s e^{-2\tau}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(H_0\)</span></td>
+<td>哈勃常数（推导参数）</td>
+<td>由 <span class="arithmatex">\(\theta_*\)</span>、<span class="arithmatex">\(\Omega_b h^2\)</span>、<span class="arithmatex">\(\Omega_c h^2\)</span> 联合决定</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\sigma_8\)</span></td>
+<td>物质密度涨落振幅</td>
+<td>今天 <span class="arithmatex">\(8\,h^{-1}\mathrm{Mpc}\)</span> 球内的均方根质量涨落</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\Omega_m\)</span></td>
+<td>物质密度参数</td>
+<td><span class="arithmatex">\(= \Omega_b + \Omega_c + \Omega_\nu\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(r_{\rm drag}\)</span></td>
+<td>拖曳期声学视界</td>
+<td>BAO 标准尺，CMB 功率谱峰间距也由它决定</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(A_{\rm lens}\)</span></td>
+<td>透镜振幅</td>
+<td>人为缩放引力透镜对功率谱的影响，<span class="arithmatex">\(\Lambda\)</span>CDM 预测 <span class="arithmatex">\(A_{\rm lens} = 1\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(h r_d\)</span></td>
+<td>BAO 复合标准尺</td>
+<td><span class="arithmatex">\(\equiv (H_0/100) \times r_{\rm drag}\)</span>，BAO 直接约束的组合量</td>
+</tr>
+</tbody>
+</table>
+<p><strong>三种谱的直觉</strong>：
+- <strong>TT</strong>（温度自相关）：信号最强，但高 <span class="arithmatex">\(\ell\)</span> 受前景（尘埃、点源、SZ 效应）污染严重。
+- <strong>TE</strong>（温度-偏振交叉）：前景污染极低，在 damping tail 仍保持高信噪比，是 SPT-3G 最有信息量的谱。
+- <strong>EE</strong>（E 模偏振自相关）：前景最干净，但信号比 TT 弱得多；SPT-3G 在 <span class="arithmatex">\(\ell &gt; 1800\)</span> 首次成为全球最灵敏。</p>
+<hr />
+<h2 id="fig-1-band-powers">Fig 1: 三大实验 band powers 对比<a class="headerlink" href="#fig-1-band-powers" title="Permanent link">&para;</a></h2>
+<p><img alt="fig1" src="../../papers/2506.20707/experiments.png" /></p>
+<h3 id="_2">前因<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>在 Planck 2018 之后，地面实验（ACT DR6、SPT-3G）逐步积累数据，试图在小角度和偏振测量上超越卫星。但三个实验是否一致？SPT-3G 在哪些角尺度上最有优势？这张图直接回答这两个问题。</p>
+<h3 id="_3">图/表说什么<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>将 SPT-3G D1（蓝点）、ACT DR6（橙色空心方块）、Planck PR3（绿色空心圆）三个实验的"最小方差"（minimum-variance）band powers 画在一起。上排展示 TT 和 EE 的对数尺度；下排展示 TE 的线性尺度，并在 <span class="arithmatex">\(\ell &gt; 2000\)</span> 区域插入放大图。黑色实线是 SPT-3G 数据的 <span class="arithmatex">\(\Lambda\)</span>CDM 最佳拟合。</p>
+<p><strong>核心信息</strong>：
+1. 三个完全独立的实验在宽广的 <span class="arithmatex">\(\ell\)</span> 范围内高度一致——<span class="arithmatex">\(\Lambda\)</span>CDM 的胜利。
+2. SPT-3G 在 EE 的 <span class="arithmatex">\(\ell = 1800\)</span>–<span class="arithmatex">\(4000\)</span> 和 TE 的 <span class="arithmatex">\(\ell = 2200\)</span>–<span class="arithmatex">\(4000\)</span> 是当前全球最精确的测量。
+3. 在 <span class="arithmatex">\(\ell &lt; 1000\)</span> 的大角度，Planck 因全天覆盖而占优（宇宙方差更小）。</p>
+<h3 id="_4">怎么看<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>横轴</strong>：多极矩 <span class="arithmatex">\(\ell\)</span>（角尺度的倒数；<span class="arithmatex">\(\ell \sim 180°/\theta\)</span>）。</li>
+<li><strong>纵轴</strong>：<span class="arithmatex">\(D_\ell = \ell(\ell+1)C_\ell / 2\pi\)</span>，单位 <span class="arithmatex">\(\mu\mathrm{K}^2\)</span>。对数尺度让声学峰和 damping tail 同时可见。</li>
+<li><strong>上排 TT</strong>：第一声学峰在 <span class="arithmatex">\(\ell \approx 220\)</span>（图外），第二、三峰清晰可见。<span class="arithmatex">\(\ell &gt; 2000\)</span> 处信号被前景淹没，SPT 因此将 TT 截至 <span class="arithmatex">\(\ell = 3000\)</span>。</li>
+<li><strong>上排 EE</strong>：偏振峰位置与 TT 交错（TT 的峰对应 EE 的谷），在 <span class="arithmatex">\(\ell \sim 1000\)</span> 附近有最高峰。关键是放大 <span class="arithmatex">\(\ell &gt; 1800\)</span> 后可看到 SPT-3G（蓝点）误差棒最短。</li>
+<li><strong>下排 TE</strong>：TE 谱有正有负（物理来源：温度和偏振的相位差），线性尺度才能看到过零点。放大图清楚展示了 SPT-3G 在 <span class="arithmatex">\(\ell &gt; 2200\)</span> 的主导地位。</li>
+</ul>
+<h3 id="_5">需要理解的物理/公式<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p><strong>Band power 的构造</strong>（论文 Eq. 37）：</p>
+<div class="arithmatex">\[\hat{C}^{XY;\mu\nu}_{b} = \sum_\ell Q_{b\ell} \frac{\bar{C}^{XY;\mu\nu}_\ell - A^{XY;\mu\nu}_\ell - I^{XY;\mu\nu}_\ell}{F_{\ell}^{XY;\mu\nu} B_{\ell}^{T;\mu} B_{\ell}^{T;\nu} P_{\ell}^2}\]</div>
+<ul>
+<li>原始伪功率谱 <span class="arithmatex">\(\bar{C}_\ell\)</span> 减去滤波残差 <span class="arithmatex">\(A_\ell\)</span> 和 inpainting 残差 <span class="arithmatex">\(I_\ell\)</span>，再除以转移函数 <span class="arithmatex">\(F_\ell\)</span>、温度波束 <span class="arithmatex">\(B_\ell^T\)</span> 和像素窗函数 <span class="arithmatex">\(P_\ell\)</span>。最后用 binning 算符 <span class="arithmatex">\(Q_{b\ell}\)</span> 压缩到 <span class="arithmatex">\(\Delta\ell = 50\)</span> 的 bin。</li>
+</ul>
+<p><strong>最小方差组合</strong>：将所有频率组合（<span class="arithmatex">\(95\times95\)</span>, <span class="arithmatex">\(150\times95\)</span>, ...）按其协方差矩阵加权合并为单一谱，最大化信噪比。图中展示的就是这个"最终产品"。</p>
+<h3 id="_6">后果<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>三大实验一致 → 有充分理由将它们合并为 "CMBall" 数据集，获得迄今最强的 CMB 约束力。SPT-3G 在高 <span class="arithmatex">\(\ell\)</span> 偏振上的优势将在后续图表中转化为对宇宙学参数的强约束。</p>
+<hr />
+<h2 id="tab-ii-lambdacdm">Tab II: <span class="arithmatex">\(\Lambda\)</span>CDM 参数约束总表<a class="headerlink" href="#tab-ii-lambdacdm" title="Permanent link">&para;</a></h2>
+<p><strong>论文 Table II</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>Planck</th>
+<th>SPT-3G D1</th>
+<th>ACT DR6</th>
+<th>Ground</th>
+<th>CMBall</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(10^4\theta_*\)</span></td>
+<td><span class="arithmatex">\(104.184\pm 0.029\)</span></td>
+<td><span class="arithmatex">\(104.171\pm 0.060\)</span></td>
+<td><span class="arithmatex">\(104.157\pm 0.030\)</span></td>
+<td><span class="arithmatex">\(104.158\pm 0.025\)</span></td>
+<td><span class="arithmatex">\(104.162\pm 0.023\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(100\,\Omega_b h^2\)</span></td>
+<td><span class="arithmatex">\(2.238\pm 0.014\)</span></td>
+<td><span class="arithmatex">\(2.221\pm 0.020\)</span></td>
+<td><span class="arithmatex">\(2.257\pm 0.016\)</span></td>
+<td><span class="arithmatex">\(2.247\pm 0.013\)</span></td>
+<td><span class="arithmatex">\(2.2381\pm 0.0093\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(100\,\Omega_c h^2\)</span></td>
+<td><span class="arithmatex">\(11.98\pm 0.11\)</span></td>
+<td><span class="arithmatex">\(12.14\pm 0.16\)</span></td>
+<td><span class="arithmatex">\(12.26\pm 0.17\)</span></td>
+<td><span class="arithmatex">\(12.22\pm 0.12\)</span></td>
+<td><span class="arithmatex">\(12.009\pm 0.086\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(n_s\)</span></td>
+<td><span class="arithmatex">\(0.9657\pm 0.0040\)</span></td>
+<td><span class="arithmatex">\(0.951\pm 0.011\)</span></td>
+<td><span class="arithmatex">\(0.9682\pm 0.0069\)</span></td>
+<td><span class="arithmatex">\(0.9671\pm 0.0058\)</span></td>
+<td><span class="arithmatex">\(0.9684\pm 0.0030\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ln(10^{10}A_s)\)</span></td>
+<td><span class="arithmatex">\(3.042\pm 0.011\)</span></td>
+<td><span class="arithmatex">\(3.054\pm 0.015\)</span></td>
+<td><span class="arithmatex">\(3.038\pm 0.012\)</span></td>
+<td><span class="arithmatex">\(3.042\pm 0.011\)</span></td>
+<td><span class="arithmatex">\(3.0479\pm 0.0099\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\tau_{\rm reio}\)</span></td>
+<td><span class="arithmatex">\(0.0535\pm 0.0056\)</span></td>
+<td><span class="arithmatex">\(0.0506\pm 0.0059\)</span></td>
+<td><span class="arithmatex">\(0.0513\pm 0.0060\)</span></td>
+<td><span class="arithmatex">\(0.0514\pm 0.0059\)</span></td>
+<td><span class="arithmatex">\(0.0559\pm 0.0055\)</span></td>
+</tr>
+<tr>
+<td><strong><span class="arithmatex">\(H_0\)</span></strong> [km/s/Mpc]</td>
+<td><strong>67.41±0.49</strong></td>
+<td><strong>66.66±0.60</strong></td>
+<td><strong>66.51±0.64</strong></td>
+<td><strong>66.59±0.46</strong></td>
+<td><strong>67.24±0.35</strong></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\sigma_8\)</span></td>
+<td><span class="arithmatex">\(0.8099\pm 0.0051\)</span></td>
+<td><span class="arithmatex">\(0.8158\pm 0.0058\)</span></td>
+<td><span class="arithmatex">\(0.8171\pm 0.0055\)</span></td>
+<td><span class="arithmatex">\(0.8169\pm 0.0042\)</span></td>
+<td><span class="arithmatex">\(0.8137\pm 0.0038\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\Omega_m\)</span></td>
+<td><span class="arithmatex">\(0.3145\pm 0.0067\)</span></td>
+<td><span class="arithmatex">\(0.3246\pm 0.0091\)</span></td>
+<td><span class="arithmatex">\(0.330\pm 0.010\)</span></td>
+<td><span class="arithmatex">\(0.3277\pm 0.0072\)</span></td>
+<td><span class="arithmatex">\(0.3166\pm 0.0051\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(r_{\rm drag}\)</span> [Mpc]</td>
+<td><span class="arithmatex">\(147.13\pm 0.25\)</span></td>
+<td><span class="arithmatex">\(146.92\pm 0.47\)</span></td>
+<td><span class="arithmatex">\(146.20\pm 0.46\)</span></td>
+<td><span class="arithmatex">\(146.43\pm 0.34\)</span></td>
+<td><span class="arithmatex">\(147.07\pm 0.22\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">前因<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(\Lambda\)</span>CDM 只有 6 个自由参数。将三个 CMB 实验各自独立拟合同一模型，参数是否一致？这是对标准模型最基本的检验。</p>
+<h3 id="_8">图/表说什么<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>所有参数在 <span class="arithmatex">\(1\sigma\)</span> 以内一致</strong>——SPT-3G 与 Planck 的参数级一致性为 <span class="arithmatex">\(0.4\sigma\)</span>，与 ACT DR6 为 <span class="arithmatex">\(1.1\sigma\)</span>。</li>
+<li><strong>SPT-3G 单独约束力已接近 Planck</strong>：<span class="arithmatex">\(\sigma(H_0) = 0.60\)</span> vs. Planck 的 <span class="arithmatex">\(0.49\)</span>，差距仅 22%。</li>
+<li><strong>Ground（SPT+ACT）在 <span class="arithmatex">\(H_0\)</span> 和 <span class="arithmatex">\(\sigma_8\)</span> 上达到 Planck 精度</strong>：<span class="arithmatex">\(\sigma(H_0) = 0.46\)</span>（Planck 为 <span class="arithmatex">\(0.49\)</span>），这是地面实验首次达到这一里程碑。</li>
+<li><strong>CMBall 是迄今最强的 CMB 约束</strong>：<span class="arithmatex">\(H_0 = 67.24 \pm 0.35\)</span>。</li>
+</ol>
+<h3 id="_9">怎么看<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>采样参数（sampled）是 MCMC 直接采样的量，推导参数（derived）是从采样参数计算出来的。</li>
+<li><span class="arithmatex">\(H_0\)</span> 是推导参数：固定 <span class="arithmatex">\(\theta_*\)</span> 后，<span class="arithmatex">\(H_0\)</span> 由 <span class="arithmatex">\(\Omega_b h^2\)</span> 和 <span class="arithmatex">\(\Omega_c h^2\)</span> 决定。SPT-3G 的 CMB 透镜数据对打破 <span class="arithmatex">\(H_0\)</span> 的简并方向至关重要。</li>
+<li><span class="arithmatex">\(n_s\)</span> 的 SPT 误差较大（0.011 vs. Planck 0.004），因为 <span class="arithmatex">\(n_s\)</span> 主要由大角度峰的斜率决定，而 SPT 只覆盖 4% 天区。</li>
+<li><span class="arithmatex">\(\tau_{\rm reio}\)</span> 所有列几乎相同（<span class="arithmatex">\(\sim 0.051\)</span>），因为都使用了相同的 Planck PR4 先验。</li>
+</ul>
+<h3 id="_10">需要理解的物理/公式<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(H_0\)</span> 的推导链：</p>
+<div class="arithmatex">\[\theta_* = \frac{r_s^*}{D_A^*}\]</div>
+<ul>
+<li><span class="arithmatex">\(r_s^*\)</span>：最后散射面的声学视界，由 <span class="arithmatex">\(\Omega_b h^2\)</span>、<span class="arithmatex">\(\Omega_c h^2\)</span> 决定（通过影响声速和退耦时刻）。</li>
+<li><span class="arithmatex">\(D_A^*\)</span>：到最后散射面的角直径距离，由 <span class="arithmatex">\(H_0\)</span>、<span class="arithmatex">\(\Omega_m\)</span>、<span class="arithmatex">\(\Omega_\Lambda\)</span> 决定。</li>
+<li>因此 <span class="arithmatex">\(\theta_*\)</span>（测量最精确）+ 密度参数 → 唯一确定 <span class="arithmatex">\(H_0\)</span>。</li>
+</ul>
+<h3 id="_11">后果<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>一致性已确认 → 组合数据集的物理基础成立。<span class="arithmatex">\(H_0 \approx 67\)</span> 与 SH0ES 的 <span class="arithmatex">\(73.17\)</span> 之间存在 <span class="arithmatex">\(6\sigma\)</span> 以上的张力。</p>
+<hr />
+<h2 id="fig-2-lambdacdm">Fig 2: <span class="arithmatex">\(\Lambda\)</span>CDM 参数三角图<a class="headerlink" href="#fig-2-lambdacdm" title="Permanent link">&para;</a></h2>
+<p><img alt="fig2" src="../../papers/2506.20707/lcdm_main_fig.png" /></p>
+<h3 id="_12">前因<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>Tab II 给出了一维数字，但参数之间存在复杂的简并关系（degeneracies）。三角图（triangle plot）是标准的可视化工具，用二维等高线展示参数间的相关性。</p>
+<h3 id="_13">图/表说什么<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>对角线：各参数的一维后验分布（1D marginalised posterior），上方标注均值和 <span class="arithmatex">\(68\%\)</span> 置信区间。</p>
+<p>非对角线：两两参数的二维 <span class="arithmatex">\(68\%\)</span> 和 <span class="arithmatex">\(95\%\)</span> 置信等高线。颜色编码：SPT-3G D1（蓝）、Planck（绿）、ACT DR6（棕）、Ground（紫）、CMBall（红）。</p>
+<p><strong>核心信息</strong>：五组等高线高度重叠。CMBall（红）区域最小，代表最强约束。</p>
+<h3 id="_14">怎么看<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><span class="arithmatex">\(\Omega_c h^2\)</span> vs. <span class="arithmatex">\(H_0\)</span> 面</strong>：负相关。更多暗物质 → 更大 <span class="arithmatex">\(\Omega_m\)</span> → 降低 <span class="arithmatex">\(H_0\)</span>（以保持 <span class="arithmatex">\(\theta_*\)</span> 不变）。等高线的长轴方向就是主简并方向。</li>
+<li><strong><span class="arithmatex">\(n_s\)</span> vs. <span class="arithmatex">\(\Omega_b h^2\)</span> 面</strong>：正相关。更高 <span class="arithmatex">\(\Omega_b h^2\)</span> 增加 Silk 阻尼后的峰高，<span class="arithmatex">\(n_s\)</span> 需要调高以补偿。</li>
+<li><strong><span class="arithmatex">\(\Omega_b h^2\)</span> vs. <span class="arithmatex">\(H_0\)</span></strong>：微弱正相关。<span class="arithmatex">\(\Omega_b h^2\)</span> 增大 → <span class="arithmatex">\(r_s^*\)</span> 减小 → 为保持 <span class="arithmatex">\(\theta_*\)</span>，<span class="arithmatex">\(D_A^*\)</span> 减小 → <span class="arithmatex">\(H_0\)</span> 增大。</li>
+<li>注意 SPT-3G（蓝）在某些面板中的等高线比 Planck（绿）更大，但在 <span class="arithmatex">\(H_0\)</span>-<span class="arithmatex">\(\Omega_c h^2\)</span> 面大小接近。</li>
+</ul>
+<h3 id="_15">需要理解的物理/公式<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>三角图的等高线由 MCMC 采样的后验密度得到。<span class="arithmatex">\(68\%\)</span> 等高线包含参数空间中后验密度最高的 <span class="arithmatex">\(68\%\)</span> 区域（highest posterior density region）。</p>
+<h3 id="_16">后果<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<p>参数级一致性的视觉确认。三个独立 CMB 实验、不同天区、不同仪器、不同流水线，得到相互重叠的结果——这是 <span class="arithmatex">\(\Lambda\)</span>CDM 模型令人印象深刻的成功。</p>
+<hr />
+<h2 id="fig-3-band-powers">Fig 3: 所有频率组合的 Band Powers 与残差<a class="headerlink" href="#fig-3-band-powers" title="Permanent link">&para;</a></h2>
+<p><img alt="fig3" src="../../papers/2506.20707/bandpowers.png" /></p>
+<h3 id="_17">前因<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p>Fig 1 展示的是合并后的最小方差 band powers。但原始数据包含 6 种频率组合（<span class="arithmatex">\(95\times95\)</span>, <span class="arithmatex">\(150\times150\)</span>, <span class="arithmatex">\(220\times220\)</span>, <span class="arithmatex">\(150\times95\)</span>, <span class="arithmatex">\(220\times150\)</span>, <span class="arithmatex">\(220\times95\)</span>）。展示每一种的拟合情况，才能完整验证数据模型的准确性。</p>
+<h3 id="_18">图/表说什么<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p><strong>大面板</strong>：每种频率组合的 TT、TE、EE band powers（数据点）与 <span class="arithmatex">\(\Lambda\)</span>CDM + 完整数据模型的最佳拟合（曲线）。不同频率组合有不同的前景贡献（如 <span class="arithmatex">\(220\times220\)</span> 的 TT 在高 <span class="arithmatex">\(\ell\)</span> 比 <span class="arithmatex">\(95\times95\)</span> 高，因为尘埃辐射随频率增强），但模型都能精确匹配。</p>
+<p><strong>小面板（残差）</strong>：数据减去模型。低 <span class="arithmatex">\(\ell\)</span> 残差有相关性（信号主导、宇宙方差限制），高 <span class="arithmatex">\(\ell\)</span> 残差趋向随机（噪声主导）。</p>
+<p><strong>关键数字</strong>：全数据最佳拟合 <span class="arithmatex">\(\chi^2 = 1359\)</span>（PTE = 0.52），说明模型对数据的描述极为出色。</p>
+<h3 id="_19">怎么看<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<ul>
+<li>TT 面板：注意在 <span class="arithmatex">\(\ell &gt; 2000\)</span> 处，不同频率的 TT 曲线分叉——这是前景（点源、SZ 效应）的频率依赖性。模型包含了前景项所以仍能很好拟合。</li>
+<li>TE/EE 面板：偏振前景极弱，所有频率的曲线几乎重合。</li>
+<li>残差面板：如果看到系统性偏离零线的结构，就意味着模型有问题。这里所有残差都与统计期望一致。</li>
+</ul>
+<h3 id="_20">需要理解的物理/公式<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<p>完整数据模型包含 CMB 信号 + 前景 + 系统效应：</p>
+<div class="arithmatex">\[D_\ell^{\text{model}} = D_\ell^{\text{CMB, lensed}} + D_\ell^{\text{foreground}}(\nu_1, \nu_2) + D_\ell^{\text{systematics}}\]</div>
+<p>前景项包括：射电和红外点源 Poisson 噪声、CIB 聚集、tSZ 效应、kSZ 效应、tSZ×CIB 交叉项。系统效应包括：超级透镜化（super-sample lensing）、绝对标定、波束不确定性、温度到偏振泄漏。</p>
+<h3 id="_21">后果<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<p>PTE = 0.52 是"教科书级"的拟合优度——模型既不过拟合也不欠拟合。这给了我们信心，band powers 中的宇宙学信息是可靠的。</p>
+<hr />
+<h2 id="fig-4-snr">Fig 4: 信噪比（SNR）对比<a class="headerlink" href="#fig-4-snr" title="Permanent link">&para;</a></h2>
+<p><img alt="fig4" src="../../papers/2506.20707/snr.png" /></p>
+<h3 id="_22">前因<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<p>"最精确"这个说法需要量化。信噪比（signal-to-noise ratio, SNR）逐 <span class="arithmatex">\(\ell\)</span> 展示了不同实验在不同角尺度上的相对灵敏度。</p>
+<h3 id="_23">图/表说什么<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<p>三条实线分别代表 SPT-3G D1（蓝）、Planck（绿）、ACT DR6（橙）的逐 <span class="arithmatex">\(\ell\)</span> SNR（已归一到 <span class="arithmatex">\(\Delta\ell = 1\)</span>）。蓝色虚线是 SPT-3G 完整巡天（AllSPT，含 Main+Summer+Wide，覆盖 25% 天空）的预测。</p>
+<p>三个面板从上到下为 TT、TE、EE。</p>
+<h3 id="_24">怎么看<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>SNR = 1 线</strong>（黑色实线）：SNR 降至 1 以下意味着噪声开始主导。</li>
+<li>SPT-3G EE：SNR &gt; 1 直到 <span class="arithmatex">\(\ell \lesssim 3300\)</span>。</li>
+<li>SPT-3G TE：SNR &gt; 1 直到 <span class="arithmatex">\(\ell \lesssim 3300\)</span>。</li>
+<li><strong>TT</strong>：Planck 在 <span class="arithmatex">\(\ell &lt; 1500\)</span> 占优（全天观测，宇宙方差小），SPT-3G 在 <span class="arithmatex">\(1500 &lt; \ell &lt; 3000\)</span> 有优势但差距不大。注意 SPT 不报告 <span class="arithmatex">\(\ell &gt; 3000\)</span> 的 TT，因此那里没有蓝线。</li>
+<li><strong>TE</strong>：<span class="arithmatex">\(\ell &gt; 2200\)</span> 处 SPT-3G 超过 ACT DR6，在 <span class="arithmatex">\(1800 &lt; \ell &lt; 2200\)</span> 两者相当。</li>
+<li><strong>EE</strong>：<span class="arithmatex">\(\ell &gt; 1800\)</span> 处 SPT-3G 占据绝对优势——这是论文最核心的数据卖点。</li>
+<li><strong>蓝色虚线</strong>：AllSPT 预测将在全 <span class="arithmatex">\(\ell\)</span> 范围压倒性超越 Planck 和 ACT。</li>
+</ul>
+<h3 id="_25">需要理解的物理/公式<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<p>SNR 的定义：</p>
+<div class="arithmatex">\[\text{SNR}_\ell = \frac{C_\ell^{\text{signal}}}{\sigma(C_\ell)}\]</div>
+<p>其中 <span class="arithmatex">\(\sigma(C_\ell)\)</span> 包含宇宙方差和噪声。宇宙方差 <span class="arithmatex">\(\propto 1/\sqrt{f_{\rm sky}(2\ell+1)}\)</span>，因此 Planck（<span class="arithmatex">\(f_{\rm sky} \sim 0.7\)</span>）在大角度占优。噪声取决于探测器灵敏度和分辨率：SPT-3G 的噪声水平为 <span class="arithmatex">\(3.3\,\mu\text{K-arcmin}\)</span>（温度）、<span class="arithmatex">\(5.1\,\mu\text{K-arcmin}\)</span>（偏振），远低于 Planck。</p>
+<h3 id="_26">后果<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<p>这张图是 SPT-3G 宣称"最精确偏振测量"的定量依据。它也揭示了 SPT-3G 当前的局限：覆盖天区太小（4%），在大角度被宇宙方差限制。AllSPT 将观测 25% 天空，彻底解决这个问题。</p>
+<hr />
+<h2 id="fig-5-tt-vs-te-vs-ee">Fig 5: TT vs. TE vs. EE 独立约束对比<a class="headerlink" href="#fig-5-tt-vs-te-vs-ee" title="Permanent link">&para;</a></h2>
+<p><img alt="fig5" src="../../papers/2506.20707/lcdm_TTvsTEvsEE.png" /></p>
+<h3 id="_27">前因<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(\Lambda\)</span>CDM 模型要求 TT、TE、EE 给出一致的宇宙学参数——这是一个非平凡的自洽性检验。同时，比较它们各自的约束力可以揭示哪种谱对 SPT-3G 最有价值。</p>
+<h3 id="_28">图/表说什么<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<p>三角图展示了仅用 TT（黄）、仅用 TE（蓝）、仅用 EE（红）、以及 TTTEEE 组合（黑）的 <span class="arithmatex">\(\Lambda\)</span>CDM 参数约束。</p>
+<p><strong>核心发现</strong>：
+1. TT、TE、EE 独立约束之间高度一致（PTE 表显示所有对之间一致性在 <span class="arithmatex">\(1.2\sigma\)</span> 以内）。
+2. <strong>TE 谱的约束力最强</strong>——TE 的等高线最窄，接近 TTTEEE 组合。去掉 TT 只轻微放松约束。
+3. 这与 Planck（TT 约束力最强）形成鲜明对比，反映了 SPT-3G 的偏振灵敏度优势。</p>
+<h3 id="_29">怎么看<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
+<ul>
+<li>比较各颜色等高线的大小：蓝色（TE）最小 → TE 信息量最大。</li>
+<li>黄色（TT）等高线相对较大，因为 SPT 的 TT 受限于 <span class="arithmatex">\(\ell_{\rm max} = 3000\)</span> 和较小天区。</li>
+<li>黑色等高线（TTTEEE）与蓝色几乎完全重叠 → 说明 TE 已经主导了联合约束。</li>
+</ul>
+<h3 id="_30">需要理解的物理/公式<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h3>
+<p><strong>为什么 TE 比 TT 更有信息量？</strong></p>
+<ol>
+<li><strong>前景更低</strong>：TE 谱中前景贡献极小（射电点源和尘埃在偏振中很弱），允许 SPT 使用到 <span class="arithmatex">\(\ell = 4000\)</span> 而 TT 只能到 3000。</li>
+<li><strong>damping tail 信息</strong>：TE 谱在高 <span class="arithmatex">\(\ell\)</span> 的振荡幅度（相对于信号）比 TT 更大，因此对 <span class="arithmatex">\(\Omega_b h^2\)</span>、<span class="arithmatex">\(n_s\)</span> 等参数的灵敏度更高。</li>
+<li><strong>SPT 噪声优势</strong>：偏振噪声 <span class="arithmatex">\(5.1\,\mu\text{K-arcmin}\)</span> 使得 TE 在 damping tail 保持高 SNR。</li>
+</ol>
+<h3 id="_31">后果<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h3>
+<p>TE 作为"最强谱"意味着 SPT-3G 的科学回报主要来自偏振测量能力。这指明了未来实验（SPT-3G AllSPT、CMB-S4）的优化方向：继续提升偏振灵敏度。</p>
+<hr />
+<h2 id="fig-6-h_0-hubble">Fig 6: <span class="arithmatex">\(H_0\)</span> 汇总 — Hubble 张力可视化<a class="headerlink" href="#fig-6-h_0-hubble" title="Permanent link">&para;</a></h2>
+<p><img alt="fig6" src="../../papers/2506.20707/H0_exp.png" /></p>
+<h3 id="_32">前因<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h3>
+<p>Hubble 张力是当代宇宙学最大的谜题之一：早期宇宙探针（CMB + BAO）给出 <span class="arithmatex">\(H_0 \sim 67\)</span>，晚期宇宙的距离阶梯测量（SH0ES）给出 <span class="arithmatex">\(H_0 \sim 73\)</span>，差距超过 <span class="arithmatex">\(5\sigma\)</span>。SPT-3G 作为新的独立 CMB 实验，能否确认这一张力？</p>
+<h3 id="_33">图/表说什么<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h3>
+<p>汇总各数据集对 <span class="arithmatex">\(H_0\)</span> 的约束，按数据组合排列。加粗标注的是本文结果。</p>
+<p><strong>CMB 约束</strong>（蓝/紫/绿色区域）：
+- SPT-3G D1 alone: <span class="arithmatex">\(66.66 \pm 0.60\)</span>（距 SH0ES <span class="arithmatex">\(6.2\sigma\)</span>）
+- Ground (SPT+ACT): <span class="arithmatex">\(66.59 \pm 0.46\)</span>
+- CMBall (SPT+ACT+Planck): <span class="arithmatex">\(67.24 \pm 0.35\)</span>（距 SH0ES <span class="arithmatex">\(6.4\sigma\)</span>）</p>
+<p><strong>晚期宇宙测量</strong>：
+- SH0ES: <span class="arithmatex">\(73.17 \pm 0.86\)</span>（橙色）
+- CCHP: <span class="arithmatex">\(70.4 \pm 1.9\)</span>（蓝色）</p>
+<h3 id="_34">怎么看<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h3>
+<ul>
+<li>横轴：<span class="arithmatex">\(H_0\)</span>（km/s/Mpc），所有 CMB 结果聚集在 <span class="arithmatex">\(\sim 67\)</span> 附近，SH0ES 在 <span class="arithmatex">\(\sim 73\)</span> 处，中间有明显的"空白地带"。</li>
+<li>各 CMB 实验的误差棒无论怎么组合都远离 SH0ES。CCHP 的结果位于两组之间，但不确定度较大（<span class="arithmatex">\(\pm 1.9\)</span>）。</li>
+<li>注意 SPT-3G <strong>单独</strong>就能以 <span class="arithmatex">\(6.2\sigma\)</span> 确认 Hubble 张力——这是以前任何单一地面实验未曾达到的。</li>
+</ul>
+<h3 id="_35">需要理解的物理/公式<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h3>
+<p>CMB 对 <span class="arithmatex">\(H_0\)</span> 的推断完全依赖 <span class="arithmatex">\(\Lambda\)</span>CDM 模型。如果新物理改变了 <span class="arithmatex">\(r_s^*\)</span>（如 early dark energy 或 modified recombination），CMB 推断的 <span class="arithmatex">\(H_0\)</span> 会改变。但本文表明在所有检验过的扩展模型中，CMB 与 SH0ES 的差距都未被完全消除。</p>
+<p>张力的统计显著性计算：</p>
+<div class="arithmatex">\[\text{Tension} = \frac{|H_0^{\text{CMB}} - H_0^{\text{SH0ES}}|}{\sqrt{\sigma_{\text{CMB}}^2 + \sigma_{\text{SH0ES}}^2}}\]</div>
+<p>SPT-3G alone: <span class="arithmatex">\(|66.66 - 73.17| / \sqrt{0.60^2 + 0.86^2} \approx 6.2\sigma\)</span>。</p>
+<h3 id="_36">后果<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h3>
+<p>SPT-3G 独立确认 Hubble 张力，排除了"张力仅来自 Planck 系统误差"的可能性。三个独立 CMB 实验、不同仪器、不同天区、不同流水线，全部指向 <span class="arithmatex">\(H_0 \sim 67\)</span>。</p>
+<hr />
+<h2 id="fig-7-sigma_8omega_m-s_8">Fig 7: <span class="arithmatex">\(\sigma_8\)</span>–<span class="arithmatex">\(\Omega_m\)</span> 平面 — <span class="arithmatex">\(S_8\)</span> 张力状态<a class="headerlink" href="#fig-7-sigma_8omega_m-s_8" title="Permanent link">&para;</a></h2>
+<p><img alt="fig7" src="../../papers/2506.20707/s8_omegam.png" /></p>
+<h3 id="_37">前因<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h3>
+<p>除了 Hubble 张力，宇宙学中另一个备受关注的可能张力是 <span class="arithmatex">\(S_8\)</span> 张力：CMB 预测的宇宙结构增长振幅是否与低红移大尺度结构（LSS）观测一致？</p>
+<h3 id="_38">图/表说什么<a class="headerlink" href="#_38" title="Permanent link">&para;</a></h3>
+<p>在 <span class="arithmatex">\(\Omega_m\)</span>–<span class="arithmatex">\(\sigma_8\)</span> 平面上展示：
+- <strong>SPT-3G D1</strong>（黑色）和 <strong>CMBall primary</strong>（蓝色）：CMB 约束
+- <strong>CMB lensing 联合</strong>（粉色，SPT+ACT+Planck lensing）
+- <strong>DES-Y3 3×2pt</strong>（橙色）：星系弱引力透镜 + 星系聚集
+- <strong>SPT 星系团</strong>（绿色）</p>
+<p><strong>核心信息</strong>：所有探针在 <span class="arithmatex">\(2\sigma\)</span> 以内一致！<span class="arithmatex">\(S_8\)</span> 张力正在缓解。</p>
+<h3 id="_39">怎么看<a class="headerlink" href="#_39" title="Permanent link">&para;</a></h3>
+<ul>
+<li>不同探针的简并方向不同（等高线长轴的斜率不同），这反映了各自对 <span class="arithmatex">\(S_8^\alpha = \sigma_8(\Omega_m/0.3)^\alpha\)</span> 的灵敏度差异（<span class="arithmatex">\(\alpha\)</span> 不同）。</li>
+<li>CMB 等高线（黑、蓝）沿 <span class="arithmatex">\(\sigma_8 \propto \Omega_m^{-0.25}\)</span> 方向延伸。</li>
+<li>DES-Y3（橙）沿 <span class="arithmatex">\(\sigma_8 \propto \Omega_m^{-0.5}\)</span> 方向延伸。</li>
+<li>尽管方向不同，等高线在 <span class="arithmatex">\(\Omega_m \sim 0.3\)</span>、<span class="arithmatex">\(\sigma_8 \sim 0.81\)</span> 附近交汇。</li>
+<li>论文报告 CMBall primary 与 DES-Y3 一致性为 <span class="arithmatex">\(1.8\sigma\)</span>，与 KiDS 最新结果一致性为 <span class="arithmatex">\(0.86\sigma\)</span>。</li>
+</ul>
+<h3 id="_40">需要理解的物理/公式<a class="headerlink" href="#_40" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(S_8\)</span> 的定义：</p>
+<div class="arithmatex">\[S_8 \equiv \sigma_8 \sqrt{\Omega_m / 0.3}\]</div>
+<p>更一般地，<span class="arithmatex">\(S_8^\alpha = \sigma_8 (\Omega_m/0.3)^\alpha\)</span>，其中 <span class="arithmatex">\(\alpha\)</span> 取决于特定探针。</p>
+<p>CMB 约束 <span class="arithmatex">\(\sigma_8\)</span> 的途径：原初振幅 <span class="arithmatex">\(A_s\)</span> + 引力透镜 + 物质密度 → <span class="arithmatex">\(\sigma_8\)</span>。</p>
+<p>LSS 约束 <span class="arithmatex">\(S_8\)</span> 的途径：星系形状的微小形变（cosmic shear）统计量直接测量前景物质分布的功率。</p>
+<h3 id="_41">后果<a class="headerlink" href="#_41" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(S_8\)</span> 张力的缓解意味着 <span class="arithmatex">\(\Lambda\)</span>CDM 在描述结构增长方面依然成功。但更精确的未来数据（Rubin/LSST、Euclid）将对此做更严格的检验。</p>
+<hr />
+<h2 id="fig-8-a_rm-lens">Fig 8: <span class="arithmatex">\(A_{\rm lens}\)</span> 参数 — 透镜异常检验<a class="headerlink" href="#fig-8-a_rm-lens" title="Permanent link">&para;</a></h2>
+<p><img alt="fig8" src="../../papers/2506.20707/Alens_triangle.png" /></p>
+<h3 id="_42">前因<a class="headerlink" href="#_42" title="Permanent link">&para;</a></h3>
+<p>Planck 的 TT 数据长期显示一个 <span class="arithmatex">\(2\)</span>–<span class="arithmatex">\(3\sigma\)</span> 的 <span class="arithmatex">\(A_{\rm lens} &gt; 1\)</span> 异常：引力透镜对功率谱的"平滑"效应似乎比 <span class="arithmatex">\(\Lambda\)</span>CDM 预测的更强。这可能暗示新物理，也可能是统计涨落或系统误差。地面实验能否提供独立判据？</p>
+<h3 id="_43">图/表说什么<a class="headerlink" href="#_43" title="Permanent link">&para;</a></h3>
+<p><strong>左侧面板</strong>：仅用 TT 数据的 <span class="arithmatex">\(A_{\rm 2pt}\)</span>（引力透镜对 primary CMB 功率谱的影响幅度）后验。</p>
+<p><strong>右侧面板</strong>：使用 T&amp;E 数据。</p>
+<p><strong>表格</strong>：各数据集的 <span class="arithmatex">\(68\%\)</span> 置信区间。</p>
+<p><strong>核心结论</strong>：
+- Planck TT: <span class="arithmatex">\(A_{\rm 2pt} = 1.239 \pm 0.095\)</span>（<span class="arithmatex">\(\sim 2.5\sigma\)</span> 偏离 1）
+- Planck T&amp;E: <span class="arithmatex">\(A_{\rm 2pt} = 1.185 \pm 0.067\)</span>（<span class="arithmatex">\(\sim 2.8\sigma\)</span>）
+- <strong>Ground TT</strong>: <span class="arithmatex">\(A_{\rm 2pt} = 1.014 \pm 0.098\)</span>（与 1 完美一致）
+- <strong>Ground T&amp;E</strong>: <span class="arithmatex">\(A_{\rm 2pt} = 1.016^{+0.048}_{-0.054}\)</span>（与 1 完美一致）</p>
+<h3 id="_44">怎么看<a class="headerlink" href="#_44" title="Permanent link">&para;</a></h3>
+<ul>
+<li>虚线标注 <span class="arithmatex">\(A_{\rm lens} = 1\)</span>（<span class="arithmatex">\(\Lambda\)</span>CDM 预测）。</li>
+<li>Planck（绿色）的后验明显偏向右侧（<span class="arithmatex">\(&gt; 1\)</span>）。</li>
+<li>Ground（紫色）的后验精确地以 1 为中心。</li>
+<li>SPT-3G alone（蓝色）在仅用 TT 时有较大误差（天区小），但加入偏振后约束大幅收紧并趋向 1。</li>
+<li>Ground 的 TT 结果与 Planck TT 结果相差 <span class="arithmatex">\(\sim 2.3\sigma\)</span>，暗示 Planck 的 <span class="arithmatex">\(A_{\rm lens}\)</span> 异常可能不是宇宙学信号。</li>
+</ul>
+<h3 id="_45">需要理解的物理/公式<a class="headerlink" href="#_45" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(A_{\rm lens}\)</span>（论文中区分为 <span class="arithmatex">\(A_{\rm 2pt}\)</span> 和 <span class="arithmatex">\(A_{\rm recon}\)</span>）的作用：</p>
+<div class="arithmatex">\[C_\ell^{\text{lensed}} = C_\ell^{\text{unlensed}} + A_{\rm 2pt} \times \Delta C_\ell^{\text{lensing}}\]</div>
+<p>引力透镜使 CMB 功率谱的声学峰变平滑（高峰降低、低谷填高）。<span class="arithmatex">\(A_{\rm lens} &gt; 1\)</span> 意味着"平滑过度"。</p>
+<p><strong>为什么 Planck TT 看到 <span class="arithmatex">\(A_{\rm lens} &gt; 1\)</span>？</strong> 可能的解释包括：(1) Planck TT 高 <span class="arithmatex">\(\ell\)</span> 数据中的统计涨落；(2) Planck 数据处理中的残余系统效应。PR4 和 CamSpec 重分析显示此异常有所降低。</p>
+<h3 id="_46">后果<a class="headerlink" href="#_46" title="Permanent link">&para;</a></h3>
+<p>Ground 数据与 <span class="arithmatex">\(A_{\rm lens} = 1\)</span> 的一致性，使 Planck 异常更可能是统计涨落或系统效应。但加入 DESI BAO 后情况有趣的变化：CMBall+DESI 得到 <span class="arithmatex">\(A_{\rm lens} = 1.084 \pm 0.024\)</span>（<span class="arithmatex">\(3.5\sigma\)</span>），这是 CMB 与 BAO 在 <span class="arithmatex">\(\Lambda\)</span>CDM 中张力的一个"投影"，而非 CMB 内部的异常。</p>
+<hr />
+<h2 id="fig-9-omega_mhr_d-cmb-vs-desi-bao-28sigma">Fig 9: <span class="arithmatex">\(\Omega_m\)</span>–<span class="arithmatex">\(hr_d\)</span> 平面 — CMB vs. DESI BAO 的 <span class="arithmatex">\(2.8\sigma\)</span> 张力<a class="headerlink" href="#fig-9-omega_mhr_d-cmb-vs-desi-bao-28sigma" title="Permanent link">&para;</a></h2>
+<p><img alt="fig9" src="../../papers/2506.20707/hord.png" /></p>
+<h3 id="_47">前因<a class="headerlink" href="#_47" title="Permanent link">&para;</a></h3>
+<p>DESI DR2 的 BAO 测量是 2025 年宇宙学最重要的新数据之一。BAO 直接约束的是 <span class="arithmatex">\(\Omega_m\)</span> 和 <span class="arithmatex">\(hr_d\)</span>——这恰好也是 CMB 在 <span class="arithmatex">\(\Lambda\)</span>CDM 下能精确推断的参数。两者一致吗？</p>
+<h3 id="_48">图/表说什么<a class="headerlink" href="#_48" title="Permanent link">&para;</a></h3>
+<p><strong>上方</strong>：<span class="arithmatex">\(\Omega_m\)</span>–<span class="arithmatex">\(hr_d\)</span> 平面的二维等高线。DESI（灰色填充）偏好更低的 <span class="arithmatex">\(\Omega_m\)</span>、更高的 <span class="arithmatex">\(hr_d\)</span>。各种 CMB 组合（SPT, Planck, ACT, Ground, CMBall）的等高线都偏向更高的 <span class="arithmatex">\(\Omega_m\)</span>、更低的 <span class="arithmatex">\(hr_d\)</span>。</p>
+<p><strong>下方表格</strong>：量化张力程度。CMBall 与 DESI 之间的差异为 <strong><span class="arithmatex">\(2.8\sigma\)</span></strong>。Ground 与 DESI 的差异更大：<span class="arithmatex">\(3.7\sigma\)</span>。</p>
+<h3 id="_49">怎么看<a class="headerlink" href="#_49" title="Permanent link">&para;</a></h3>
+<ul>
+<li>DESI 等高线（灰色）和 CMB 等高线（彩色）之间有清晰的位移——它们不重叠。</li>
+<li>所有 CMB 数据集都趋向右下方（高 <span class="arithmatex">\(\Omega_m\)</span>，低 <span class="arithmatex">\(hr_d\)</span>），DESI 趋向左上方。</li>
+<li>注意 CMBall（红色）相比 Ground（紫色）稍微向 DESI 靠近，因为 Planck 大角度数据偏好略低的 <span class="arithmatex">\(\Omega_m\)</span>。</li>
+<li><span class="arithmatex">\(2.8\sigma\)</span> 介于"有趣"和"显著"之间——还不足以宣布新物理，但足以引起警觉。</li>
+</ul>
+<h3 id="_50">需要理解的物理/公式<a class="headerlink" href="#_50" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(hr_d\)</span> 的物理含义：</p>
+<div class="arithmatex">\[hr_d \equiv \frac{H_0}{100\,\text{km/s/Mpc}} \times r_{\rm drag}\]</div>
+<p>BAO 测量的是 <span class="arithmatex">\(r_d / D_V(z)\)</span> 或 <span class="arithmatex">\(r_d \cdot H(z)\)</span>，其中 <span class="arithmatex">\(D_V\)</span> 是体积平均距离。结合多个红移 bin → 约束 <span class="arithmatex">\(\Omega_m\)</span> 和 <span class="arithmatex">\(hr_d\)</span>。</p>
+<p>CMB 独立推断 <span class="arithmatex">\(r_d\)</span>（由声速积分决定）和 <span class="arithmatex">\(H_0\)</span>（通过 <span class="arithmatex">\(\theta_*\)</span>），因此也约束 <span class="arithmatex">\(hr_d\)</span>。</p>
+<p><strong>为什么会有张力？</strong> 在 <span class="arithmatex">\(\Lambda\)</span>CDM 中，CMB 和 BAO 对 <span class="arithmatex">\(\Omega_m\)</span> 和 <span class="arithmatex">\(hr_d\)</span> 的约束应该完全一致。不一致意味着：(1) 统计涨落；(2) 系统误差；(3) <span class="arithmatex">\(\Lambda\)</span>CDM 不完整。</p>
+<h3 id="_51">后果<a class="headerlink" href="#_51" title="Permanent link">&para;</a></h3>
+<p>这个 <span class="arithmatex">\(2.8\sigma\)</span> 张力是本文"超越 <span class="arithmatex">\(\Lambda\)</span>CDM 搜索"的出发点。后续所有扩展模型（<span class="arithmatex">\(A_{\rm lens}\)</span>、<span class="arithmatex">\(N_{\rm eff}\)</span>、<span class="arithmatex">\(\Omega_k\)</span>、<span class="arithmatex">\(w_0w_a\)</span>、<span class="arithmatex">\(\sum m_\nu\)</span>）都可以理解为：模型打开了额外的自由度，使 CMB 的 <span class="arithmatex">\(\Omega_m\)</span>–<span class="arithmatex">\(hr_d\)</span> 等高线能"伸展"到与 DESI 重叠的区域。</p>
+<hr />
+<h2 id="fig-10-cmball-vs-cmballdesi">Fig 10: 扩展模型总结 — CMBall vs. CMBall+DESI<a class="headerlink" href="#fig-10-cmball-vs-cmballdesi" title="Permanent link">&para;</a></h2>
+<p><img alt="fig10" src="../../papers/2506.20707/cmball_desi_shift_plot.png" /></p>
+<h3 id="_52">前因<a class="headerlink" href="#_52" title="Permanent link">&para;</a></h3>
+<p>前面已经看到 <span class="arithmatex">\(\Lambda\)</span>CDM 下 CMB 与 DESI 存在 <span class="arithmatex">\(2.8\sigma\)</span> 张力。如果允许模型扩展（增加自由参数），联合拟合会偏好偏离标准模型吗？</p>
+<h3 id="_53">图/表说什么<a class="headerlink" href="#_53" title="Permanent link">&para;</a></h3>
+<p>四个面板从左到右展示四个扩展参数：<span class="arithmatex">\(A_{\rm lens}\)</span>、<span class="arithmatex">\(\sum m_\nu\)</span>、<span class="arithmatex">\(\Omega_k\)</span>、<span class="arithmatex">\(w_\perp\)</span>（将 <span class="arithmatex">\(w_0\)</span>-<span class="arithmatex">\(w_a\)</span> 沿 DESI 简并方向压缩为一个数）。</p>
+<p><strong>上排（蓝色）</strong>：仅用 CMBall 的约束。
+<strong>下排（橙色）</strong>：CMBall + DESI 的约束。</p>
+<p>虚线标注 <span class="arithmatex">\(\Lambda\)</span>CDM 的预期值（<span class="arithmatex">\(A_{\rm lens}=1\)</span>、<span class="arithmatex">\(\sum m_\nu \geq 0.06\,\text{eV}\)</span>、<span class="arithmatex">\(\Omega_k=0\)</span>、<span class="arithmatex">\(w_\perp=0\)</span>）。</p>
+<p><strong>核心发现</strong>：
+- CMBall alone（蓝色）在所有扩展参数上与 <span class="arithmatex">\(\Lambda\)</span>CDM 一致。
+- CMBall + DESI（橙色）在每个扩展参数上都发生偏移，偏离 <span class="arithmatex">\(\Lambda\)</span>CDM <span class="arithmatex">\(2\)</span>–<span class="arithmatex">\(3\sigma\)</span>。</p>
+<h3 id="_54">怎么看<a class="headerlink" href="#_54" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><span class="arithmatex">\(A_{\rm lens}\)</span> 面板</strong>：CMBall 给 <span class="arithmatex">\(1.055 \pm 0.030\)</span>（<span class="arithmatex">\(1.8\sigma\)</span>），加 DESI 后变为 <span class="arithmatex">\(1.084 \pm 0.024\)</span>（<span class="arithmatex">\(3.5\sigma\)</span>）。</li>
+<li><strong><span class="arithmatex">\(\sum m_\nu\)</span> 面板</strong>：CMBall 给上限 <span class="arithmatex">\(&lt; 0.17\,\text{eV}\)</span>（<span class="arithmatex">\(95\%\)</span>），加 DESI 后被挤到 <span class="arithmatex">\(&lt; 0.048\,\text{eV}\)</span>——低于中微子振荡的最小质量（<span class="arithmatex">\(0.06\,\text{eV}\)</span> for NH），这在物理上令人不安。</li>
+<li><strong><span class="arithmatex">\(\Omega_k\)</span> 面板</strong>：CMBall 与零一致，加 DESI 后偏向正值 <span class="arithmatex">\(0.26 \pm 0.11\)</span>（<span class="arithmatex">\(2.4\sigma\)</span>），暗示"开放宇宙"。</li>
+<li><strong><span class="arithmatex">\(w_\perp\)</span> 面板</strong>：CMB alone 无法约束暗能量演化（蓝色水平线），但 CMBall+DESI 给出 <span class="arithmatex">\(1.91 \pm 0.57\)</span>（<span class="arithmatex">\(3.4\sigma\)</span> 偏离零），暗示暗能量状态方程 <span class="arithmatex">\(w(z)\)</span> 偏离 <span class="arithmatex">\(-1\)</span>。</li>
+</ul>
+<h3 id="_55">需要理解的物理/公式<a class="headerlink" href="#_55" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(w_\perp\)</span> 的定义（论文 Eq. 68）：</p>
+<div class="arithmatex">\[w_\perp \equiv w_a + 3.5(w_0 + 1)\]</div>
+<p>这是沿 DESI 数据在 <span class="arithmatex">\(w_0\)</span>–<span class="arithmatex">\(w_a\)</span> 平面的主简并方向的投影。<span class="arithmatex">\(w_\perp = 0\)</span> 对应 <span class="arithmatex">\(\Lambda\)</span>CDM（<span class="arithmatex">\(w_0 = -1\)</span>, <span class="arithmatex">\(w_a = 0\)</span>），<span class="arithmatex">\(w_\perp &gt; 0\)</span> 对应 <span class="arithmatex">\(w_0 &gt; -1\)</span>、<span class="arithmatex">\(w_a &lt; 0\)</span> 的暗能量演化。</p>
+<p><span class="arithmatex">\(\chi^2\)</span> 改善量（论文 Table IX）——扣除额外自由度后转换为等效高斯显著性：
+| 模型 | <span class="arithmatex">\(\Delta\chi^2\)</span>（CMBall+DESI vs. <span class="arithmatex">\(\Lambda\)</span>CDM） | 额外参数 | 等效显著性 |
+|------|------|------|------|
+| <span class="arithmatex">\(A_{\rm lens}\)</span> | 9.5 | 1 | <span class="arithmatex">\(3.1\sigma\)</span> |
+| <span class="arithmatex">\(\Omega_k\)</span> | 6.3 | 1 | <span class="arithmatex">\(2.5\sigma\)</span> |
+| <span class="arithmatex">\(\sum m_\nu\)</span> | 7.8 | 1 | <span class="arithmatex">\(2.8\sigma\)</span> |
+| <span class="arithmatex">\(w_0 w_a\)</span> | 13.5 | 2 | <span class="arithmatex">\(3.2\sigma\)</span> |</p>
+<h3 id="_56">后果<a class="headerlink" href="#_56" title="Permanent link">&para;</a></h3>
+<p>这是全文最具前瞻性的图。它传达的信息是：<strong><span class="arithmatex">\(\Lambda\)</span>CDM 仍然没有被单一探针推翻，但 CMB 与 BAO 的联合分析在多个扩展方向上一致地看到 <span class="arithmatex">\(2\)</span>–<span class="arithmatex">\(3\sigma\)</span> 的偏移。</strong> 这些信号可能是统计涨落（毕竟只有 <span class="arithmatex">\(\sim 3\sigma\)</span>），也可能是新物理的第一缕曙光。未来的 DESI DR3、CMB-S4、SPT-3G AllSPT 将给出答案。</p>
+<hr />
+<h2 id="_57">全文图表逻辑链<a class="headerlink" href="#_57" title="Permanent link">&para;</a></h2>
+<p>下面用一条链条串联 10 张核心图/表的论证逻辑：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>[Fig 3: 全频 band powers + 残差]
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    ↓ 验证数据质量（PTE = 0.52）
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>[Fig 4: SNR 对比]
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    ↓ 定量确认 SPT-3G 在 TE/EE 高ℓ 最灵敏
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>[Fig 1: 三大实验 band powers 对比]
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    ↓ 三个实验高度一致 → 有理由组合
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>[Fig 5: TT vs TE vs EE 独立约束]
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    ↓ SPT-3G 的约束主要由 TE 驱动，ΛCDM 内部自洽
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>[Tab II: ΛCDM 参数表]
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    ↓ 量化参数约束：SPT ≈ Planck，Ground ≥ Planck，CMBall 最强
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>[Fig 2: ΛCDM 三角图]
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    ↓ 参数级一致性的视觉确认
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>[Fig 6: H₀ 汇总]
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    ↓ 所有 CMB → H₀ ≈ 67，与 SH0ES ≈ 73 差 6σ+ → Hubble 张力确认
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>[Fig 7: σ₈-Ω_m 平面]
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    ↓ CMB 与 LSS 在结构增长上一致 → S₈ 张力缓解
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>[Fig 8: A_lens]
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    ↓ Ground 数据无 lensing 异常 → Planck 异常可能非宇宙学信号
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>[Fig 9: Ω_m-hr_d 平面]
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    ↓ CMB 与 DESI BAO 之间 2.8σ 张力 → 驱动扩展模型搜索
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>[Fig 10: 扩展模型总结]
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    ↓ CMB alone 不偏好超越 ΛCDM，但 +DESI → 多方向 2-3σ 偏移
+</code></pre></div>
+<p><strong>全链条的叙事</strong>：SPT-3G 的深度偏振数据 → 通过严格验证 → 确认 <span class="arithmatex">\(\Lambda\)</span>CDM 在 CMB 内部完全自洽 → 独立确认 Hubble 张力 → 缓解 <span class="arithmatex">\(S_8\)</span> 张力 → 消除 Planck 透镜异常 → 但发现 CMB 与 DESI BAO 出现新的 <span class="arithmatex">\(2.8\sigma\)</span> 张力 → 在扩展模型中体现为 <span class="arithmatex">\(2\)</span>–<span class="arithmatex">\(3\sigma\)</span> 的偏离标准模型信号。</p>
+<hr />
+<h2 id="_58">总结<a class="headerlink" href="#_58" title="Permanent link">&para;</a></h2>
+<h3 id="spt-3g-d1">SPT-3G D1 的三个核心成就<a class="headerlink" href="#spt-3g-d1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>偏振测量达到全球最灵敏</strong>：在 EE 的 <span class="arithmatex">\(\ell = 1800\)</span>–<span class="arithmatex">\(4000\)</span> 和 TE 的 <span class="arithmatex">\(\ell = 2200\)</span>–<span class="arithmatex">\(4000\)</span>，SPT-3G 的误差棒是三大实验中最小的。TE 谱成为 SPT-3G 最有信息量的通道。</p>
+</li>
+<li>
+<p><strong>地面实验首次匹敌 Planck</strong>：Ground（SPT+ACT）在 <span class="arithmatex">\(H_0\)</span>、<span class="arithmatex">\(\sigma_8\)</span> 上的约束精度达到或超过 Planck 卫星。CMBall 组合给出 CMB 迄今最强的宇宙学约束：<span class="arithmatex">\(H_0 = 67.24 \pm 0.35\)</span>、<span class="arithmatex">\(\sigma_8 = 0.8137 \pm 0.0038\)</span>。</p>
+</li>
+<li>
+<p><strong>发现 CMB-BAO 新张力</strong>：CMBall 与 DESI DR2 在 <span class="arithmatex">\(\Lambda\)</span>CDM 下差异 <span class="arithmatex">\(2.8\sigma\)</span>。虽不足以宣布新物理发现，但在 <span class="arithmatex">\(A_{\rm lens}\)</span>、<span class="arithmatex">\(\Omega_k\)</span>、<span class="arithmatex">\(w_0w_a\)</span>、<span class="arithmatex">\(\sum m_\nu\)</span> 多个扩展方向一致出现 <span class="arithmatex">\(2\)</span>–<span class="arithmatex">\(3\sigma\)</span> 偏移——这是未来需要密切关注的方向。</p>
+</li>
+</ol>
+<h3 id="_59">未解决的问题<a class="headerlink" href="#_59" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Hubble 张力</strong>：<span class="arithmatex">\(6.4\sigma\)</span>（CMBall vs. SH0ES），所有检验过的扩展模型（modified recombination + curvature 可降至 <span class="arithmatex">\(1.9\sigma\)</span>，但以牺牲模型简洁性为代价）均未完全消解。</li>
+<li><strong>CMB vs. DESI</strong>：<span class="arithmatex">\(2.8\sigma\)</span> 是统计涨落还是新物理？需要 DESI DR3 和 SPT-3G AllSPT 的更高精度数据来判断。</li>
+<li><strong>中微子质量</strong>：CMBall+DESI 给出 <span class="arithmatex">\(\sum m_\nu &lt; 0.048\,\text{eV}\)</span>（95% CL），低于正常序列最小值 <span class="arithmatex">\(0.06\,\text{eV}\)</span>——与粒子物理实验矛盾，可能反映了 CMB-BAO 张力的投影。</li>
+<li><strong>偏振波束的独立标定</strong>：论文指出，EE 谱的约束力受限于偏振波束（polarized beam）的不确定性；如果能从外部精确标定波束，EE 的约束将进一步收紧。</li>
+</ul>
+<h3 id="_60">展望<a class="headerlink" href="#_60" title="Permanent link">&para;</a></h3>
+<p>SPT-3G 还有大量数据尚未使用：Summer fields（<span class="arithmatex">\(2600\,\text{deg}^2\)</span>）分析已接近完成，2024 年的 Wide Survey（<span class="arithmatex">\(6000\,\text{deg}^2\)</span>）正在分析中。AllSPT 将覆盖 25% 天空、<span class="arithmatex">\(\sim 10000\,\text{deg}^2\)</span>，彻底消除宇宙方差限制，并在信噪比上全面超越 Planck。再加上 CMB-S4 在 2030 年代的部署，地面 CMB 实验将主导宇宙学的下一个十年。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+    
+  </body>
+</html>
