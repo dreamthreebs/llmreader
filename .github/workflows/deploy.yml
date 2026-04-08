@@ -36,8 +36,13 @@ jobs:
       - name: Build site
         run: mkdocs build
 
+      # GitHub Pages 若走 Jekyll 会把笔记里的 {{...}} 当 Liquid；静态站点根目录需 .nojekyll
+      - name: Disable Jekyll on published site
+        run: touch site/.nojekyll
+
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
+          enable_jekyll: false

@@ -219,6 +219,19 @@ for f in *.pdf; do magick "$f" -resize '800x800>' -quality 85 "${f%.pdf}.png"; d
 
 A: 目前默认中文输出。如果需要改为英文或其他语言，修改 `SKILL.md` 中「格式约定」部分的语言设置即可。
 
+## GitHub Pages（MkDocs 站点）
+
+仓库根目录的 `readings/*.md` 里常有 LaTeX 的 `{{ ... }}`，**不能**让 GitHub Pages 用 Jekyll 去「从 main 根目录构建站点」，否则会报 Liquid 语法错误。
+
+正确做法：
+
+1. 推送 `main` 后，等待 **Actions** 里 **Deploy to GitHub Pages** 跑完；它会用 MkDocs 生成静态站并推到 **`gh-pages`** 分支。
+2. 打开 **Settings → Pages → Build and deployment**：
+   - **Source** 选 **Deploy from a branch**（不要用 main 当站点根）。
+   - **Branch** 选 **`gh-pages`**，目录选 **`/ (root)`**。
+
+若仍看到 `jekyll-theme-primer`、`Rendering: readings/...` 的日志，说明 Pages 仍在从 **main** 跑 Jekyll；请按上面把分支改成 **`gh-pages`**。
+
 ## License
 
 MIT
