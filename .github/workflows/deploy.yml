@@ -13,8 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -23,21 +21,23 @@ jobs:
       - name: Install MkDocs Material
         run: pip install mkdocs-material
 
-      - name: Configure git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
       - name: Prepare docs directory
         run: |
           mkdir -p docs
           cp index.md docs/
-          ln -s "$(pwd)/readings" docs/readings
-          ln -s "$(pwd)/papers" docs/papers
-          ln -s "$(pwd)/javascripts" docs/javascripts
+          cp -r readings docs/
+          cp -r javascripts docs/
+          mkdir -p docs/papers
+          find papers -name "*.png" -exec cp --parents {} docs/ \; 2>/dev/null || true
 
       - name: Generate navigation from index.md
         run: python scripts/gen_nav.py
 
-      - name: Deploy to gh-pages branch
-        run: mkdocs gh-deploy --force
+      - name: Build site
+        run: mkdocs build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
