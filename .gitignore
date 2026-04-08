@@ -2,3 +2,4 @@ papers/
 !papers/**/*.png
 .DS_Store
 site/
+docs/
