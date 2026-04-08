@@ -356,3 +356,4 @@ done
 - 优先保证 fidelity，再追求 intuition。
 - 每读完一个 subsection → 追加写入对应笔记文件。
 - 每读完一篇 → 在 `index.md` 追加记录（arXiv ID / 标题 / 主题 / 阅读日期）。
+- **并行任务时 `index.md` 由主 agent 统一更新**：子 agent 不直接写 `index.md`，而是在返回结果中附带论文元信息（arXiv ID、标题、主题），由主 agent 汇总后一次性写入，避免重复和冲突。
