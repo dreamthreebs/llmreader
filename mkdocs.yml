@@ -1,0 +1,123 @@
+site_name: Paper Reader
+site_description: AI 辅助的科研论文精读笔记
+repo_url: https://github.com/pointsource/llmreader
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: 暗色模式
+    - scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: 亮色模式
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.details
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js
+  - javascripts/katex.js
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+exclude_docs: |
+  papers/**/*.tex
+  papers/**/*.ps
+  papers/**/*.eps
+  papers/**/*.tar*
+  papers/**/*.sty
+  papers/**/*.bbl
+  papers/**/*.bst
+  papers/**/*.cls
+  papers/**/*.bib
+
+nav:
+  - 首页: index.md
+  - 论文笔记:
+    - "1511.02846 — The Kinetic Sunyaev-Zel'dovich Effect from Reionizat...":
+      - 总纲: readings/1511.02846/总纲.md
+      - 故事版: readings/1511.02846/故事版.md
+      - 图表版: readings/1511.02846/图表版.md
+      - 精读 §1: readings/1511.02846/§1.md
+      - 精读 §2: readings/1511.02846/§2.md
+      - 精读 §3: readings/1511.02846/§3.md
+    - "2002.06197 — An Improved Measurement of the Secondary Cosmic Micr...":
+      - 总纲: readings/2002.06197/总纲.md
+      - 故事版: readings/2002.06197/故事版.md
+      - 图表版: readings/2002.06197/图表版.md
+    - "2504.09725 — Rapid and Late Cosmic Reionization Driven by Massive...":
+      - 总纲: readings/2504.09725/总纲.md
+      - 故事版: readings/2504.09725/故事版.md
+      - 图表版: readings/2504.09725/图表版.md
+    - "2506.20707 — SPT-3G D1: CMB TT/TE/EE Power Spectra and Cosmology ...":
+      - 总纲: readings/2506.20707/总纲.md
+      - 故事版: readings/2506.20707/故事版.md
+      - 图表版: readings/2506.20707/图表版.md
+    - "astro-ph/0501504 — Comparison of Map-Making Algorithms for CMB Experiments":
+      - 总纲: readings/astro-ph.0501504/总纲.md
+      - 故事版: readings/astro-ph.0501504/故事版.md
+      - 图表版: readings/astro-ph.0501504/图表版.md
+    - "1203.4219 — Evidence of Galaxy Cluster Motions with the Kinemati...":
+      - 总纲: readings/1203.4219/总纲.md
+      - 故事版: readings/1203.4219/故事版.md
+      - 图表版: readings/1203.4219/图表版.md
+    - "1510.06442 — Evidence for the Kinematic Sunyaev-Zel'dovich Effect...":
+      - 总纲: readings/1510.06442/总纲.md
+      - 故事版: readings/1510.06442/故事版.md
+      - 图表版: readings/1510.06442/图表版.md
+    - "1603.03904 — Detection of the Kinematic Sunyaev-Zel'dovich Effect...":
+      - 总纲: readings/1603.03904/总纲.md
+      - 故事版: readings/1603.03904/故事版.md
+      - 图表版: readings/1603.03904/图表版.md
+    - "2101.08373 — The Atacama Cosmology Telescope: Probing the Baryon ...":
+      - 总纲: readings/2101.08373/总纲.md
+      - 故事版: readings/2101.08373/故事版.md
+      - 图表版: readings/2101.08373/图表版.md
+    - "2307.11894 — Pairwise kSZ Signal Extraction Efficacy and Optical ...":
+      - 总纲: readings/2307.11894/总纲.md
+      - 故事版: readings/2307.11894/故事版.md
+      - 图表版: readings/2307.11894/图表版.md
+    - "2511.23417 — Detection of the Pairwise Kinematic Sunyaev-Zel'dovi...":
+      - 总纲: readings/2511.23417/总纲.md
+      - 故事版: readings/2511.23417/故事版.md
+      - 图表版: readings/2511.23417/图表版.md
