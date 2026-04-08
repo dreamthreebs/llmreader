@@ -6,3 +6,4 @@
 | 2002.06197 | An Improved Measurement of the Secondary CMB Anisotropies from the SPT-SZ + SPTpol Surveys | kSZ / tSZ / CIB / reionization / SPT | 2026-03-16 |
 | 2504.09725 | Rapid and Late Cosmic Reionization Driven by Massive Galaxies: Joint Analysis of 21-cm, Lyman Line & CMB | reionization / 21-cm / Lyman-α / CMB / Bayesian | 2026-03-16 |
 | 2506.20707 | SPT-3G D1: CMB TT/TE/EE Power Spectra and Cosmology from 2019-2020 Observations | CMB / SPT-3G / ΛCDM / H₀ tension / DESI BAO | 2026-03-16 |
+| astro-ph/0501504 | Comparison of Map-Making Algorithms for CMB Experiments | CMB / map-making / ML / destriping / Planck / power spectrum | 2026-04-08 |
