@@ -1,5 +1,6 @@
-papers/
-!papers/**/*.png
+papers/**
+!papers/**/
+!papers/**/*.webp
 .DS_Store
 site/
 docs/

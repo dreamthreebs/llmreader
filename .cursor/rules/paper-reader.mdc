@@ -28,6 +28,16 @@ llmreader/
 
 ## 图片处理
 
-- `papers/<id>/figures/` 中的 PDF 图片转为 PNG（存在原目录）
-- 图表版用相对路径 `../../papers/<id>/figures/figX.png` 引用
-- 图片不进 git（`papers/` 在 `.gitignore` 中），仓库只存文本
+- `papers/<id>/figures/` 中的 PDF 图片转为 **WebP**（存在原目录）
+- 图表版用相对路径 `../../papers/<id>/figures/figX.webp` 引用
+- **WebP 入库**：`.gitignore` 仅放行 `papers/**/*.webp`，其余文件（tex、PDF、PNG 等）不入库
+- **转换流程**：PDF → 缩放至长边 ≤800px → WebP quality 80：
+  ```bash
+  # 单张
+  magick <input>.pdf -resize '800x800>' -strip <output>.webp
+  # 批量（在 papers/<id>/ 下）：
+  for f in *.pdf; do
+    magick "$f" -resize '800x800>' -strip -quality 80 "${f%.pdf}.webp"
+  done
+  ```
+- 新增论文图片后，先转 WebP 再 `git add papers/<id>/**/*.webp`

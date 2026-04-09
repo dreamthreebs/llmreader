@@ -28,7 +28,7 @@ jobs:
           cp -r readings docs/
           cp -r javascripts docs/
           mkdir -p docs/papers
-          find papers -name "*.png" -exec cp --parents {} docs/ \; 2>/dev/null || true
+          find papers -name "*.webp" -exec cp --parents {} docs/ \; 2>/dev/null || true
 
       - name: Generate navigation from index.md
         run: python scripts/gen_nav.py
