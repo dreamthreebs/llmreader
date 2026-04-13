@@ -228,12 +228,12 @@ problem → observation → insight → method 的思维链
 
 ### 图表版模板
 
-生成图表版时，自动将论文图片（PDF/PS/EPS）转为 PNG（存在原目录），并在 Markdown 中用相对路径引用。转换命令：
+生成图表版时，自动将论文图片（PDF/PS/EPS）转为 **WebP**（存在原目录），并在 Markdown 中用相对路径引用。转换命令：
 
 ```bash
 cd papers/<id>/
 for f in *.pdf *.ps *.eps; do
-  [ -f "$f" ] && magick -density 200 "$f" -resize '1200x1200>' -quality 90 -flatten "${f%.*}.png"
+  [ -f "$f" ] && magick -density 200 "$f" -resize '800x800>' -quality 80 -flatten -strip "${f%.*}.webp"
 done
 ```
 
@@ -241,9 +241,9 @@ done
 
 ```markdown
 ## Figure X — 一句话标题
-**文件**：`figX.pdf` | **对应章节**：§Y | **关键公式**：Eq.Z
+**文件**：`figX.webp` | **对应章节**：§Y | **关键公式**：Eq.Z
 
-![Fig X](../../papers/<id>/figX.png)
+![Fig X](../../papers/<id>/figX.webp)
 
 ### 图说什么
 （caption 忠实翻译 + 补充）
